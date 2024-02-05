@@ -45,6 +45,9 @@
 			height: 1px;
 			background: $main-color--b;
 		}
+		&.-no-boeder{
+			&::after{display: none;}
+		}
 	}
 	&__popArea{//上部
 		width: 100%;
@@ -72,7 +75,7 @@
 				// 	// height: auto;
 				// 	background: rgb(224, 112, 112);
 				// }
-				&.c-header__contactArea{
+				&.c-header__contactArea{// 通常の2ボタン＋1テキスト
 					@include max(768){
 						display: none;
 					}
@@ -122,6 +125,30 @@
 						width: 98%;
 						background: $main-color--b;
 					}
+
+					&.-clm2{// 通常の2ボタンのみ（高さは都度調整すること）
+						@include min(768){
+							display: grid;
+							grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+							grid-template-columns: 1fr 1fr;
+							align-items: center;
+							width: calc(28%);
+						}
+						&::before,
+						&::after{display: none;}
+						a{
+							&:nth-child(1){background: $site-color01;}
+							&:nth-child(2){background: $site-color02;}
+						}
+						.top-left{
+							grid-column: 1/2;
+							grid-row: 2/10;
+						}
+						.top-right{
+							grid-column: 2/3;
+							grid-row: 2/10;
+						}
+					}
 				}
 			}
 		}
@@ -164,6 +191,7 @@
 						height: 100%;
 						width: 1px;
 						background: $main-color--b;
+						transition: .5s all;
 					}
 					a{
 						display: block;
@@ -177,6 +205,55 @@
 						a,span{
 							color: $main-color--w;
 						}
+					}
+
+					// ナビゲーションの両端が存在しない場合、
+					&.-no-border{
+						&::before{display: none}
+						&::after{
+							position: absolute;
+							top: 85%;
+							left: 50%;
+							transform: translateX(-50%);
+							content: "";
+							width: 30%;
+							height: 2px;
+							background: inherit;
+							transition: 1s all;
+						}
+						a,span{
+							color: $main-color--b;
+							background: $main-color--w;
+						}
+						// 通常時とは異なったアクティブ表示をする。（テキスト下部にボーダーラインを加える。）
+						&.-active{
+							&::after{
+								background: $site-color03;
+							}
+							a,span{
+								color: $main-color--b;
+								background: $main-color--w;
+							}
+						}
+						&:hover{
+							background: $main-color--w;
+							transition: 1s all;
+
+							&::after{
+								display: block !important;
+								position: absolute;
+								top: 85%;
+								left: 50%;
+								transform: translateX(-50%);
+								content: "";
+								width: 30%;
+								height: 1.5px;
+								background: $site-color03-hover;
+								transition: .5s all;
+							}
+							a,span{color: $main-color--b !important;}
+						}
+
 					}
 				}
 			}

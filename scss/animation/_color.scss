@@ -1,17 +1,23 @@
 /* ----------------------------
     背景要素に色を順番に付与する。
 ---------------------------- */
-.a-bg-color{animation: bg-color-bg 5s infinite;}
-@keyframes bg-color-bg {
-    0% { background-color: #a356af; }
-    15% { background-color: #7481cd; }
-    30% { background-color: #d22c91; }
-    45% { background-color: #a356af; }
-    60% { background-color: #7481cd; }
-    75% { background-color: #4ca5e6; }
-    85% { background-color: #7481cd; }
-    100% { background-color: #a356af; }
+.a-bg-color{
+    animation: bg-color-bg_r .5s forwards;
+    // transition: all 1s;
+    &:hover{
+        animation: bg-color-bg .5s forwards;
+    }
 }
+@keyframes bg-color-bg {
+    0% { background-color: $site-color03; }
+    100% { background-color: $site-color03-hover; }
+}
+@keyframes bg-color-bg_r {
+    0% { background-color: $site-color03-hover; }
+    100% { background-color: $site-color03; }
+}
+
+
 .a-text-color{animation: bg-color-text 5s infinite;}
 @keyframes bg-color-text {
     0% { color: #a356af; }

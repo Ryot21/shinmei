@@ -18,7 +18,7 @@ h1,h2,h3,h4,h5,h6,p,a,span,label,button{
 	font-weight: $f-n;
     font-style: normal;
     text-wrap: balance;
-    word-break: auto-phrase;
+    // word-break: auto-phrase;
 	line-height: 1.3;
     
     // ボーダー
@@ -54,6 +54,10 @@ h1,h2,h3,h4,h5,h6,p,a,span,label,button{
     // 折り返し禁止
     &.-ws-n{white-space: nowrap}
 
+    // 自動改行禁止
+    &.-tw-n{text-wrap: inherit !important;}
+
+
     // 太さ
     &.-b{font-weight: $f-b;}
 
@@ -75,6 +79,7 @@ h1,h2,h3,h4,h5,h6,p,a,span,label,button{
     &.-white{color: $main-color--w}
     &.-color01{color: $site-color01;}
     &.-color02{color: $site-color02;}
+    &.-color03{color: $site-color03;}
     &.-house_c01{color: $house-color01;}
     &.-house_c02{color: $house-color02;}
     &.-house_c03{color: $house-color03;}
@@ -117,6 +122,11 @@ h1,h2,h3,h4,h5,h6,p,a,span,label,button{
             font-size: 2.1rem;
             // @include min(768){font-size: clamp(18px, 3vw, 32px);}
             @include min(768){font-size: clamp(1.8rem, 3vw, 3rem);}
+
+            &.-s-Btn{
+                font-size: 1.75rem;
+                @include min(768){font-size: clamp(1.8rem, 2vw, 2.5rem);}
+            }
         }
         &.s-3L{
             font-size: 2.8rem;

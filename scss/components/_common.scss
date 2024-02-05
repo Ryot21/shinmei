@@ -3,7 +3,7 @@
 // 横幅
 .w1100{
     @include min(768){
-        width: 100%;
+        width: 90%;
         margin: auto;
     }
     @include min(1100){
@@ -124,4 +124,17 @@
     @include min(768){
         padding: 3% 0 4%;
     }
+}
+
+.colorLabel{
+    padding: 0.5% 0 .8%;
+    border-radius: 30px;
+    transition: all 2s;
+    &.-orange{
+        background: $site-color03;
+        &:hover{
+            background: $site-color03-hover;
+        }
+    }
+
 }

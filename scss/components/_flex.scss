@@ -89,12 +89,22 @@
         li{
             width: calc(50% - 5px);
             margin: 0;
-            &:nth-child(1){margin-right: 5px !important;}
-            &:nth-child(2){margin-left: 5px !important;}
+            &:nth-child(1){
+                width: calc(40% - 5px);
+                margin-right: 5px !important;
+            }
+            &:nth-child(2){
+                width: calc(60% - 5px);
+                margin-left: 5px !important;
+            }
             @include min(768){
                 width: calc(50% - 15px);
-                &:nth-child(1){margin-right: 15px !important;}
-                &:nth-child(2){margin-left: 15px !important;}
+                &:nth-child(1){
+                    margin-right: 15px !important;
+                }
+                &:nth-child(2){
+                    margin-left: 15px !important;
+                }
             }
             &.text{
                 @include min(768){width: calc(35% - 15px);}
@@ -107,8 +117,14 @@
             li{
                 width: calc(50% - 5px);
                 margin: 0 !important;
-                &:nth-child(1){margin-left: 5px !important;}
-                &:nth-child(2){margin-right: 5px !important;}
+                &:nth-child(1){
+                    width: calc(40% - 5px);
+                    margin-left: 5px !important;
+                }
+                &:nth-child(2){
+                    width: calc(60% - 5px);
+                    margin-right: 5px !important;
+                }
                 @include min(768){
                     width: calc(50% - 15px);
                     &:nth-child(1){margin-left: 15px !important;}
@@ -195,7 +211,26 @@
             }    
         }
     }
+    // コンテンツ_カラム（sp:1 pc:3）
+    &.-col1_3{
+        flex-wrap: wrap;
+        li{
+            width: 100%;
 
+            @include min(768){
+                width: calc(33% - 15px);
+                &:nth-child(1),
+                &:nth-child(4),
+                &:nth-child(7){margin-right: 15px;}
+                &:nth-child(2),
+                &:nth-child(5),
+                &:nth-child(8){margin: 0 7.5px;}
+                &:nth-child(3),
+                &:nth-child(6),
+                &:nth-child(9){margin-left: 15px;}
+            }    
+        }
+    }
 
     // コンテンツ_カラム（sp,pc:5）
     &.-col5{

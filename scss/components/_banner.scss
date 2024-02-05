@@ -1,1 +1,11 @@
-// バナー
+
+// バナー関係
+.c-banner{
+    background: $main-color--w;
+    border-radius: 20px;
+    border: 1px solid $main-color--b;
+    overflow: hidden;
+    @include min(768){
+        border-radius: 50px;
+    }
+}

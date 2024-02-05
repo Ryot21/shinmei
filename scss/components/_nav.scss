@@ -126,7 +126,14 @@
 					transition: 2s all;
 				}
 			}
-
+			// オプション > 下線非表示
+			&.-no-border{
+				a{
+					&::before{
+						display: none !important;
+					}
+				}
+			}
 
 			// アクティブ時 アイコンを表示する
 			&.-active{

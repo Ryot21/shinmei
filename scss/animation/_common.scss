@@ -55,29 +55,32 @@
             &.-sp10 {animation-duration:10s;
                 img{animation-duration:10s}
             }
+            &.-sp20 {animation-duration:20s;
+                img{animation-duration:20s}
+            }
             // スクロール化
             &.-sc20{
                 animation-timeline: view();
-                animation-range: entry -20% contain 20%;
+                animation-range: entry 20% contain 30%;
                 img{
                     animation-timeline: view();
-                    animation-range: entry -20% contain 20%;
+                    animation-range: entry 20% contain 30%;
                 }
             }
             &.-sc30{
                 animation-timeline: view();
-                animation-range: entry -10% contain 30%;
+                animation-range: entry 30% contain 40%;
                 img{
                     animation-timeline: view();
-                    animation-range: entry -10% contain 30%;
+                    animation-range: entry 30% contain 40%;
                 }
             }
             &.-sc40{
                 animation-timeline: view();
-                animation-range: entry 0% contain 40%;
+                animation-range: entry 40% contain 50%;
                 img{
                     animation-timeline: view();
-                    animation-range: entry 0% contain 40%;
+                    animation-range: entry 40% contain 50%;
                 }
             }
             // シャドウ

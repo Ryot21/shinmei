@@ -1,18 +1,94 @@
 
 @keyframes slideUp{
     0% {
-        transform: translateY(-15%);
+        background-position: 0 top;
+    }
+    30% {
+        background-position: 0 center;
     }
     100% {
-        transform: translateY(0%);
+        background-position: 0 bottom;
     }
 }
 
-@keyframes slideOut{
+@keyframes slideDown{
     0% {
-        transform: translateY(0%);
+        background-position: 0 bottom;
     }
     100% {
-        transform: translateY(10%);
+        background-position: 0 top;
+    }
+}
+
+
+@keyframes slideRight{
+    0% {
+        background-position: left center;
+    }
+    100% {
+        background-position: right center;
+    }
+}
+
+@keyframes slideLeft{
+    0% {
+        background-position: right center;
+    }
+    100% {
+        background-position: left center;
+
+    }
+}
+
+/* ---------------------------------
+    画像スライド > →
+--------------------------------- */
+.a-slideRightImg{
+    overflow: hidden;
+    transition: 4s all;
+    &::after{
+        animation-name: slideRight;
+        animation-fill-mode:forwards;
+        animation-duration:5s;
+    }
+}
+
+/* ---------------------------------
+    画像スライド > ←
+--------------------------------- */
+.a-slideLeftImg{
+    overflow: hidden;
+    transition: 4s all;
+    &::after{
+        animation-name: slideLeft;
+        animation-fill-mode:forwards;
+        animation-duration:5s;
+
+    }
+}
+
+/* ---------------------------------
+    画像スライド > ↑
+--------------------------------- */
+.a-slideUpImg{
+    overflow: hidden;
+    transition: 4s all;
+    &::after{
+        animation-name: slideUp;
+        animation-fill-mode:forwards;
+        animation-duration:5s;
+    }
+}
+
+/* ---------------------------------
+    画像スライド > ↓
+--------------------------------- */
+.a-slideDownImg{
+    overflow: hidden;
+    transition: 4s all;
+    &::after{
+        animation-name: slideDown;
+        animation-fill-mode:forwards;
+        animation-duration:5s;
     }
 }
