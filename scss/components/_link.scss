@@ -58,7 +58,6 @@
 				opacity: 0;
 			}
 		}
-
 		.textBox{
 			width: auto;
 			margin: auto;
@@ -91,6 +90,26 @@
 					height: 2px;
 					background: $main-color--w;
 					transition: 2s all;
+				}
+			}
+		}
+		&.under{
+			position: relative;
+			transition: all 1s;
+			&::after{
+				content: "";
+				position: absolute;
+				bottom: -1px;
+				left: 49.5%;
+				transform: translateX(-50%);
+				height: 1px;
+				width: 99%;
+				background: $main-color--w;
+				transition: all 1s;
+			}
+			&:hover{
+				&::after{
+					background: $main-color--b;
 				}
 			}
 		}

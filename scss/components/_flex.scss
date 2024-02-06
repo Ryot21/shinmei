@@ -116,7 +116,7 @@
         &.-r{
             li{
                 width: calc(50% - 5px);
-                margin: 0 !important;
+                margin: 0;
                 &:nth-child(1){
                     width: calc(40% - 5px);
                     margin-left: 5px !important;
@@ -135,6 +135,37 @@
                 }
                 &.img{
                     @include min(768){width: calc(65% - 15px);}
+                }
+            }
+        }
+
+        &.-ver02{
+            flex-wrap: wrap;
+            li{
+                @include max(768){
+                    &:nth-child(1){width: calc(90% - 15px);}
+                    &:nth-child(2){
+                        width: auto;
+                        margin-left: 25px !important;
+                    }
+                }
+                @include min(768){
+                    &:nth-child(1){
+                        width: calc(52% - 15px);
+                        margin-right: 15px;
+                    }
+                    &:nth-child(2){
+                        width: calc(30% - 15px);
+                        margin-left: 15px;
+                    }
+                }
+            }
+            &.-r{
+                li{
+                    @include min(768){
+                        &:nth-child(1){margin-left: 15px;}
+                        &:nth-child(2){margin-right: 15px;}
+                    }
                 }
             }
         }

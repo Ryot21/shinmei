@@ -136,5 +136,29 @@
             background: $site-color03-hover;
         }
     }
+}
 
+// 画像関係
+.c-img{
+    // ボーダー枠
+    &.-b-frame{
+        border: 1px solid $main-color--b;
+        overflow: hidden;
+        &.-left{border-radius: 0 20px 20px 0;}
+        &.-right{border-radius: 20px 0 0 20px;}
+    }
+    // シャドウ
+    &.-shadow{
+        box-shadow: 1px 3px 5px 1px rgb(0 0 0 / 34%);
+    }
+}
+
+// タイトル関係
+.c-title{
+    &.-top{
+        width: 50%;
+        @include min(768){
+            width: 40%;
+        }
+    }
 }
