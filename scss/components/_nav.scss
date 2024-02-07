@@ -5,11 +5,12 @@
     left: 86%;
 	width: 33px;
 	height: 0;
-	opacity: .7;
 	z-index: 998;
 	@include min(768){
 		top: 1.5%;
 		left: 94%;
+		opacity: .7;
+
 	}
 	@include min(1200){
 		left: 95.5%;
@@ -244,6 +245,10 @@
 			width: 98%;
 			background: $main-color--b;
 		}
+		// SOLD OUT時に使用する
+		&.-grayOutItem{
+			pointer-events: none;
+		}
 	}
 	&__logo{
 		position: absolute;
@@ -343,6 +348,31 @@
 				background: $main-color--w;
 				transition: .5s all;
 			}
+		}
+	}
+	// 後日実装コンテンツ
+	&.-comingSoon{
+		&::after{opacity: 0;}
+
+		a{
+			pointer-events: none;
+			&::before{
+				content: "coming soom";
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				width: 60% !important;
+				color: white;
+				// background: #e40012;
+				background: $site-color01;
+				display: block;
+				z-index: 1;
+				text-align: center;
+				padding: 3px 0 4px;
+				opacity: 0.9;
+			}
+			span{opacity: .5;}
 		}
 	}
 }

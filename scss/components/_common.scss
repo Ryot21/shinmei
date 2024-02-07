@@ -39,6 +39,12 @@
         margin: auto;
     }
 }
+.w85s{
+    @include max(768){
+        width: 85% !important;
+        margin: auto;
+    }
+}
 
 .bannerArea{
     width: 60%;
@@ -133,7 +139,7 @@
     &.-orange{
         background: $site-color03;
         &:hover{
-            background: $site-color03-hover;
+            background: $site-color02;
         }
     }
 }
@@ -142,10 +148,22 @@
 .c-img{
     // ボーダー枠
     &.-b-frame{
-        border: 1px solid $main-color--b;
+        // border: 2px solid $main-color--b;
         overflow: hidden;
-        &.-left{border-radius: 0 20px 20px 0;}
-        &.-right{border-radius: 20px 0 0 20px;}
+        &.-left{
+            // border: 2px 2px 2px 0 solid $main-color--b;
+            border-top: 2px solid $main-color--b;
+            border-right: 2px solid $main-color--b;
+            border-bottom: 2px solid $main-color--b;
+            border-radius: 0 20px 20px 0;
+        }
+        &.-right{
+            // border: 2px 0 2px 2px solid $main-color--b;
+            border-top: 2px solid $main-color--b;
+            border-left: 2px solid $main-color--b;
+            border-bottom: 2px solid $main-color--b;
+            border-radius: 20px 0 0 20px;
+        }
     }
     // シャドウ
     &.-shadow{
@@ -156,7 +174,7 @@
 // タイトル関係
 .c-title{
     &.-top{
-        width: 50%;
+        width: 45%;
         @include min(768){
             width: 40%;
         }

@@ -20,7 +20,7 @@
     <!--// デプロイ前に確認・サンプル -->
 
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/swiper.min.js"></script>
+    <!-- <script src="js/swiper.min.js"></script> -->
 
     <!-- Fonts -->
     <script>
@@ -62,10 +62,10 @@
 			<ul class="">
 				<li class="-active -no-border"><a class="s-SS -ws-n -left"  href="index.html"><span class="s-M pdr5 pdr4s">TOP</span>トップ</a></li>
 				<li class="-no-border"><a class="s-SS -ws-n -left"  href="concept.html"><span class="s-M pdr5 pdr4s">CONCEPT</span>コンセプト</a></li>
-				<li class="-no-border"><a class="s-SS -ws-n -left"  href="layout.html"><span class="s-M pdr5 pdr4s">LAYOUT</span>区画・間取</a></li>
+				<li class="-no-border"><a class="s-SS -ws-n -left -grayOut"  href="layout.html"><span class="s-M pdr5 pdr4s">LAYOUT</span>区画・間取</a></li>
 				<!-- <li class="-no-boder"><a class="s-SS -ws-n -left"  href="plan.html"><span class="s-M pdr5 pdr4s">PLAN</span>参考プラン</a></li> -->
-				<li class="-no-border"><a class="s-SS -ws-n -left"  href="equipment.html"><span class="s-M pdr5 pdr4s">EQUIPMENT</span>設備・仕様</a></li>
-                <li class="-no-border"><a class="s-SS -ws-n -left"  href="location.html"><span class="s-M pdr5 pdr4s">LOCATION</span>周辺環境</a></li>
+				<li class="-no-border"><a class="s-SS -ws-n -left -grayOut"  href="equipment.html"><span class="s-M pdr5 pdr4s">EQUIPMENT</span>設備・仕様</a></li>
+                <li class="-no-border"><a class="s-SS -ws-n -left"  href="location.html"><span class="s-M pdr5 pdr4s">LOCATION</span>ロケーション</a></li>
                 <li class="-no-border mgb15 mgb15s"><a class="s-SS -ws-n -left"  href="https://www.jyukyo-cnst.co.jp/house/order/house-making/" target="_blank"><span class="s-M pdr5 pdr4s">QUALITY</span>住協の家づくり</a></li>
                 <!-- 物件概要はここには設置しないこと -->
                 <div class="c-hnav__contactArea">
@@ -139,21 +139,21 @@
                             <span class="navItem_sub s-SS -s-nav">CONCEPT</span>
                         </a>
                     </li>
-                    <li class="navItem -no-border">
+                    <li class="navItem -no-border -comingSoon">
                         <a href="layout.html" class="-lh-1">
                             <span class="navItem_main s-M -s-nav">区画・間取</span>
                             <br>
                             <span class="navItem_sub s-SS -s-nav">LAYOUT</span>
                         </a>
                     </li>
-                    <li class="navItem -no-border">
+                    <!-- <li class="navItem -no-border">
                         <a href="plan.html" class="-lh-1">
                             <span class="navItem_main s-M -s-nav">プラン</span>
                             <br>
                             <span class="navItem_sub s-SS -s-nav">PLAN</span>
                         </a>
-                    </li>
-                    <li class="navItem -no-border">
+                    </li> -->
+                    <li class="navItem -no-border -comingSoon">
                         <a href="equipment.html" class="-lh-1">
                             <span class="navItem_main s-M -s-nav">設備・仕様</span>
                             <br>
@@ -162,7 +162,7 @@
                     </li>
                     <li class="navItem -no-border">
                         <a href="location.html" class="-lh-1">
-                            <span class="navItem_main s-M -s-nav">周辺環境</span>
+                            <span class="navItem_main s-M -s-nav">ロケーション</span>
                             <br>
                             <span class="navItem_sub s-SS -s-nav">LOCATION</span>
                         </a>
@@ -201,7 +201,7 @@
                 </div>
                 <!-- サブタイトル -->
                 <div class="c-contentsBox -f-subTitle a-fade -sp5">
-                    <img class="mgb3" src="images/SVG/f-subTitlt.svg" alt="ASOBO24プロジェクト始動">
+                    <img class="mgb3 mgb2s" src="images/SVG/f-subTitlt.svg" alt="ASOBO24プロジェクト始動">
                     <p class="s-M -center -white">全24棟／今回販売6棟</p>
                 </div>
                 <!-- 注釈 -->
@@ -216,10 +216,10 @@
         <div class="c-contents -bg mgb5 mgb5s">
             <div class="c-contents-inner w1100 mgb20 mgb20s">
                 <!-- セルフコンテンツ -->
-                <ul class="c-flex -col1_3 mgb15 mgb20s">
+                <ul class="c-flex -col1_3 mgb15 mgb20s a-zoomImg">
                     <!-- 1.全棟太陽光パネル -->
-                    <li class="tb-pc pdl3 pdl3s pdr3 pdr3s">
-                        <img class="tb-pc a-flipLeft -sc20 mgb3s" src="images/SVG/top-serif01.svg" alt="全棟太陽光パネル&蓄電池搭載">
+                    <li class="tb-pc pdl3 pdl3s pdr3 pdr3s imgBox">
+                        <img class="mgb5" src="images/SVG/top-serif01.svg" alt="全棟太陽光パネル&蓄電池搭載">
                         <img class="mgb3" src="images/item/top-serifItem01.png" alt="太陽光パネルの写真">
                         <p class="s-S -left -tw-n">
                             <span class="-color03">太陽光パネルと蓄電池</span>を備え、自らエネルギーを生成するエコな住まいを実現。そこに住まわれるご家族にとっても環境にとっても優しい住宅街。
@@ -240,12 +240,9 @@
                         </ul>
                     </li>
                     <!-- 2.無電化された開放的な街並み -->
-                    <li class="tb-pc pdl3 pdl3s pdr3 pdr3s">
+                    <li class="tb-pc pdl3 pdl3s pdr3 pdr3s imgBox">
                         <br><br><br><br>
-                        <br class="sp"><br class="sp"><br class="sp"><br class="sp">
-                        <img class="tb-pc a-flipRight -sc30 mgb3" src="images/SVG/top-serif02.svg" alt="無電柱化された開放的な街並み">
-                        <img class="sp a-flipRight -sc30 mgb3"    src="images/SVG/top-serif02_s.svg" alt="無電柱化された開放的な街並み">
-
+                        <img class="mgb5" src="images/SVG/top-serif02.svg" alt="無電柱化された開放的な街並み">
                         <img class="mgb3" src="images/item/top-serifItem02.png" alt="家族のイメージ写真">
                         <p class="s-S -left -tw-n">
                             <span class="-color03">電柱を地中埋設</span>した広く開放的な街並み。景観にも優れ、街全体の資産性を向上させています。社会的な問題にも取り組んでいる、<span class="-color03">東京都知事認可</span>の民間型区画整理事業です。
@@ -265,10 +262,8 @@
                         </ul>
                     </li>
                     <!-- 3.EV自動車対応 -->
-                    <li class="tb-pc pdl3 pdl3s pdr3 pdr3s">
-                        <img class="tb-pc a-flipLeft -sc40 mgb3" src="images/SVG/top-serif03.svg" alt="EV自動車対応の先進的住宅">
-                        <img class="sp a-flipLeft -sc40 mgb3"    src="images/SVG/top-serif03_s.svg" alt="EV自動車対応の先進的住宅">
-
+                    <li class="tb-pc pdl3 pdl3s pdr3 pdr3s imgBox">
+                        <img class="mgb5" src="images/SVG/top-serif03.svg" alt="EV自動車対応の先進的住宅">
                         <img class="mgb3" src="images/item/top-serifItem03.png" alt="給油中の写真">
                         <p class="s-S -left -tw-n">
                             パナソニック製の<span class="-color03">電気自動車充電用屋外コンセント</span>を全棟に搭載しています。
@@ -290,7 +285,7 @@
                     </li>
                 </ul>
                 <!-- 区画 / ボタン -->
-                <div class="c-contents -imgBg c-banner w95s">
+                <div class="c-contents -imgBg c-banner w95s a-fadeUp -sc-20">
                     <div class="imgBox">
                         <img class="tb-pc" src="images/item/kukaku-banner.png" alt="LANDSCAPE | 全体区画図 第1期オープン">
                         <img class="sp" src="images/item/kukaku-banner_s.png" alt="LANDSCAPE | 全体区画図 第1期オープン">
@@ -307,27 +302,31 @@
                 </div>
             </div>
             <!-- 各ページに遷移するボタン -->
-            <div class="c-contents">
+            <div class="c-contents mgb15 mgb15s">
                 <!-- コンセプトエリア -->
                 <ul class="c-flex -col2_2 -ver02 mgb10 mgb10s">
-                    <li class="mgb5s">
-                        <div class="c-img -b-frame -left -shadow"><img src="images/pic/top-pic01.png" alt="コンテンツ導入の画像"></div>
+                    <li class="a-zoomImg mgb5s">
+                        <div class="imgBox c-img -b-frame -left -shadow">
+                            <img src="images/pic/top-pic01.png" alt="コンテンツ導入の画像">
+                        </div>
                     </li>
-                    <li>
-                        <img class="c-title -top mgb3 mgb3s" src="images/SVG/concept-title.svg" alt="CONCEPT | コンセプト">
-                        <p class="s-L -b -left -lh-1_5 mgb3 mgb3s">家族み～んなが笑顔になる暮らしが、<br>ここからはじまる。</p>
+                    <li class="a-fadeUp -sc-20">
+                        <img class="c-title -top mgb3 mgb5s" src="images/SVG/concept-title.svg" alt="CONCEPT | コンセプト">
+                        <p class="s-L -b -left -lh-1_5 -lh-1_3_s mgb3 mgb3s">家族み～んなが笑顔になる暮らしが、<br>ここからはじまる。</p>
                         <p class="s-M -left mgb5 mgb5s">ココロ踊る“暮らしの”エンターテインメント</p>
                         <a class="s-M c-link -text under" href="concept.html">LEARN MORE ▶️</a>
                     </li>
                 </ul>
                 <!-- プランエリア -->
                 <ul class="c-flex -r -col2_2 -ver02 mgb10 mgb10s">
-                    <li class="mgb5s">
-                        <div class="c-img -b-frame -right -shadow"><img src="images/pic/top-pic02.png" alt="コンテンツ導入の画像"></div>
+                    <li class="a-zoomImg mgb5s">
+                        <div class="imgBox c-img -b-frame -right -shadow">
+                            <img src="images/pic/top-pic02.png" alt="コンテンツ導入の画像">
+                        </div>
                     </li>
-                    <li>
-                        <img class="c-title -top mgb3 mgb3s" src="images/SVG/plan-title.svg" alt="CONCEPT | コンセプト">
-                        <p class="s-L -b -left -lh-1_5 mgb3 mgb3s">それぞれのプラン、<br>それぞれのAOSOBO。</p>
+                    <li class="a-fadeUp -sc-20">
+                        <img class="c-title -top mgb3 mgb5s" src="images/SVG/plan-title.svg" alt="CONCEPT | コンセプト">
+                        <p class="s-L -b -left -lh-1_5 -lh-1_3_s mgb3 mgb3s">それぞれのプラン、<br>それぞれのAOSOBO。</p>
                         <p class="s-M -left mgb5 mgb5s">多彩なプランのご紹介</p>
                         <p class="s-M mgb5 mgb5s" href="plan.html">COMING SOON ▶️</p>
                         <p class="s-M -left ">
@@ -338,12 +337,14 @@
                 </ul>
                 <!-- 設備エリア -->
                 <ul class="c-flex -col2_2 -ver02 mgb10 mgb10s">
-                    <li class="mgb5s">
-                        <div class="c-img -b-frame -left -shadow"><img src="images/pic/top-pic03.png" alt="コンテンツ導入の画像"></div>
+                    <li class="a-zoomImg mgb5s">
+                        <div class="imgBox c-img -b-frame -left -shadow">
+                            <img src="images/pic/top-pic03.png" alt="コンテンツ導入の画像">
+                        </div>
                     </li>
-                    <li>
-                        <img class="c-title -top mgb3 mgb3s" src="images/SVG/setsubi-title.svg" alt="EQUIPMENT | 設備・仕様">
-                        <p class="s-L -b -left -lh-1_5 mgb3 mgb3s">安全・安心・エコなスローライフをご提案。<br>プライベートサウナ搭載の特別仕様も。</p>
+                    <li class="a-fadeUp -sc-20">
+                        <img class="c-title -top mgb3 mgb5s" src="images/SVG/setsubi-title.svg" alt="EQUIPMENT | 設備・仕様">
+                        <p class="s-L -b -left -lh-1_5 -lh-1_3_s mgb3 mgb3s">安全・安心・エコなスローライフをご提案。<br>プライベートサウナ搭載の特別仕様も。</p>
                         <p class="s-M -left mgb5 mgb5s">設備・仕様のご紹介</p>
                         <p class="s-M mgb5 mgb5s" href="setsubi.html">COMING SOON ▶️</p>
                         <p class="s-M -left ">
@@ -354,36 +355,44 @@
                 </ul>
                 <!-- 周辺環境エリア -->
                 <ul class="c-flex -r -col2_2 -ver02 mgb10 mgb10s">
-                    <li class="mgb5s">
-                        <div class="c-img -b-frame -right -shadow"><img src="images/pic/top-pic04.png" alt="コンテンツ導入の画像"></div>
+                    <li class="a-zoomImg mgb5s">
+                        <div class="imgBox c-img -b-frame -right -shadow">
+                            <img src="images/pic/top-pic04.png" alt="コンテンツ導入の画像">
+                        </div>
                     </li>
-                    <li>
-                        <img class="c-title -top mgb3 mgb3s" src="images/SVG/location-title.svg" alt="LOCATION | 周辺環境">
-                        <p class="s-L -b -left -lh-1_5 mgb3 mgb3s">街も、自然も、遊び尽くす！<br>アウトドアもショッピングも充実したエリア。</p>
+                    <li class="a-fadeUp -sc-20">
+                        <img class="c-title -top mgb3 mgb5s" src="images/SVG/location-title.svg" alt="LOCATION | 周辺環境">
+                        <p class="s-L -b -left -lh-1_5 -lh-1_3_s mgb3 mgb3s">街も、自然も、遊び尽くす！<br>アウトドアもショッピングも充実したエリア。</p>
                         <p class="s-M -left mgb5 mgb5s">豊かな生活環境</p>
                         <a class="s-M c-link -text under" href="location.html">LEARN MORE ▶️</a>
                     </li>
                 </ul>
                 <!-- クオリティエリア -->
-                <ul class="c-flex -col2_2 -ver02 mgb10 mgb10s">
-                    <li class="mgb5s">
-                        <div class="c-img -b-frame -left -shadow"><img src="images/pic/top-pic05.png" alt="コンテンツ導入の画像"></div>
+                <ul class="c-flex -col2_2 -ver02">
+                    <li class="a-zoomImg mgb5s">
+                        <div class="imgBox c-img -b-frame -left -shadow">
+                            <img src="images/pic/top-pic05.png" alt="コンテンツ導入の画像">
+                        </div>
                     </li>
-                    <li>
-                        <img class="c-title -top mgb3 mgb3s" src="images/SVG/concept-title.svg" alt="QUALITY | クオリティ">
-                        <p class="s-L -b -left -lh-1_5 mgb3 mgb3s">我が家がいちばん安心・安全な場所であるために。「家族のしあわせ」を支えるたしかな品質。</p>
+                    <li class="a-fadeUp -sc-20">
+                        <img class="c-title -top mgb3 mgb5s" src="images/SVG/quality-title.svg" alt="QUALITY | クオリティ">
+                        <p class="s-L -b -left -lh-1_5 -lh-1_3_s mgb3 mgb3s">我が家がいちばん安心・安全な場所であるために。「家族のしあわせ」を支えるたしかな品質。</p>
                         <p class="s-M -left mgb5 mgb5s">住協が誇る構造・工法</p>
                         <a class="s-M c-link -text under" href="quality.html">LEARN MORE ▶️</a>
                     </li>
                 </ul>
             </div>
             <!-- 住協チャンネル -->
-            <div class="c-contents-inner w1100 mgb20 mgb20s">
-                <h2 class="s-LL -center mgb10 mgb10s">住協チャンネル</h2>
-                <ul class="c-flex -col1_2">
-                    <li></li>
-                    <li></li>
+            <div class="c-video c-contents-inner w1100 w85s mgb20 mgb20s">
+                <h2 class="s-LL -f-mincho -center mgb5 mgb5s">住協チャンネル</h2>
+                <ul class="c-videoWrap c-flex -col1_2 mgb5 mgb5s">
+                    <li class="yt-item mgb5s"><iframe width="560" height="315" src="https://www.youtube.com/embed/MWmtREq-g5c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></li>
+                    <li class="yt-item"><iframe width="560" height="315" src="https://www.youtube.com/embed/fAIJEQ7r_1s?si=WMUaFp0LBc6dc9V3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></li>
                 </ul>
+                <p class="s-M -left -tw-n">
+                    本物件の他にも、仲介手数料不要の未発表物件が多数ございます。<br class="tb-pc">
+                    周辺エリアで不動産購入をご検討の方は、お気軽にお問合せください。
+                </p>
             </div>
         </div>
     </main>
@@ -439,18 +448,18 @@
                             <span class="s-S -s-nav">コンセプト</span>
                         </a>
                     </li>
-                    <li class="navItem_footer mgb2">
-                        <a href="layout.html" class="-lh-1 -center">
+                    <li class="navItem_footer mgb2 -grayOutItem">
+                        <a href="layout.html" class="-lh-1 -center -grayOut">
                             <span class="s-S -s-nav">区画・間取</span>
                         </a>
                     </li>
-                    <li class="navItem_footer mgb2">
+                    <!-- <li class="navItem_footer mgb2">
                         <a href="plan.html" class="-lh-1 -center">
                             <span class="s-S -s-nav">プラン</span>
                         </a>
-                    </li>
-                    <li class="navItem_footer mgb2">
-                        <a href="equipment.html" class="-lh-1 -center">
+                    </li> -->
+                    <li class="navItem_footer mgb2 -grayOutItem">
+                        <a href="equipment.html" class="-lh-1 -center -grayOut">
                             <span class="s-S -s-nav">設備・仕様</span>
                         </a>
                     </li>
@@ -473,7 +482,7 @@
             </nav>
         </div>
         <div class="c-footer__btnArea mgb4 mgb10s">
-            <label class="popup popup-open" for="popup">物件概要はこちら</label>
+            <label class="popup popup-open s-M" for="popup">物件概要はこちら</label>
             <!-- 01.物件概要 -->
             <input type="checkbox" id="popup" >
             <label class="popup-overlay" for="popup"></label>
@@ -513,23 +522,22 @@
 
     <script>
         // トップページ > fristView
-        const FviewSwiper = new Swiper(".swiper-Fview", {
-            effect: 'fade',
-            fadeEffect: {crossFade: true,},
-            // loop: true,
-            speed: 3000,
-            autoplay: {
-                delay: 5000,
-                disableOnInteraction: false,
-                waitForTransition: true,
-            },
-            grabCursor: true,
-            followFinger: false,
-            pagination: {
-                el: '.swiper-Fview .swiper-pagination',
-                clickable: true,
-            },
-        });
+        // const FviewSwiper = new Swiper(".swiper-Fview", {
+        //     effect: 'fade',
+        //     fadeEffect: {crossFade: true,},
+        //     speed: 3000,
+        //     autoplay: {
+        //         delay: 5000,
+        //         disableOnInteraction: false,
+        //         waitForTransition: true,
+        //     },
+        //     grabCursor: true,
+        //     followFinger: false,
+        //     pagination: {
+        //         el: '.swiper-Fview .swiper-pagination',
+        //         clickable: true,
+        //     },
+        // });
     </script>
 </body>
 </html>

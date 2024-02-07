@@ -99,6 +99,11 @@
 				a{
 					display: block;
 				}
+
+				// SOLD OUT時に使用する
+				&.-grayOutItem{
+					pointer-events: none;
+				}
 			}
 		}
 	}
@@ -112,11 +117,11 @@
 			}
 			li{
 				position: relative;
-				width: calc(100%/4);
+				width: calc(100%/3);
 				height: auto;
 				padding: 2.1% 0;
 				@include min(768){
-					width: calc(100%/4);
+					width: calc(100%/6);
 				}
 				&:first-child{
 					&::before{

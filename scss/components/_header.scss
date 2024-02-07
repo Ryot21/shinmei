@@ -161,7 +161,7 @@
 				flex-wrap: nowrap;
 				li{
 					position: relative;
-					width: calc(100%/8);
+					width: calc(100%/7);
 					height: auto;
 					// padding: 2.1% 0;
 					background: $main-color--w;
@@ -205,6 +205,11 @@
 						a,span{
 							color: $main-color--w;
 						}
+					}
+
+					// SOLD OUT時に使用する
+					&.-grayOutItem{
+						pointer-events: none;
 					}
 
 					// ナビゲーションの両端が存在しない場合、
