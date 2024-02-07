@@ -62,11 +62,21 @@
 				&.logo{
 					width: 50%;
 					height: auto;
-					margin: auto auto auto 0;
+					margin: auto auto auto 15px;
+
 					@include min(768){
 						width: calc(72%);
 						margin: auto;
+						margin: auto auto auto 0;
+
 						img{vertical-align: baseline;}
+					}
+					&.-long{
+						@include max(768){
+							width: 80%;
+							height: auto;
+							margin: auto auto auto 17px;
+						}
 					}
 				}
 				// &.salescopy{

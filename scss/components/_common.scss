@@ -173,7 +173,14 @@
 
 // タイトル関係
 .c-title{
-    &.-top{
+
+    &.-pageTitle{// ページタイトル
+        width: 45%;
+        @include min(768){
+            width: 50%;
+        }
+    }
+    &.-top{// TOPページ
         width: 45%;
         @include min(768){
             width: 40%;

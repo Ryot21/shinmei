@@ -39,6 +39,14 @@
 
     }
 }
+@keyframes slideLeft-ver02{
+    0% {
+        left: 0;
+    }
+    100% {
+        left: 50%;
+    }
+}
 
 /* ---------------------------------
     画像スライド > →
@@ -60,10 +68,17 @@
     overflow: hidden;
     transition: 4s all;
     &::after{
+        top: 1px !important;
         animation-name: slideLeft;
         animation-fill-mode:forwards;
         animation-duration:5s;
-
+    }
+    &.-ver02{
+        &::after{
+            animation-name: slideLeft-ver02;
+            animation-fill-mode:forwards;
+            animation-duration:30s;
+        }
     }
 }
 
