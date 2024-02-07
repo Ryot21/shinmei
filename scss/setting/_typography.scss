@@ -137,7 +137,7 @@ h1,h2,h3,h4,h5,h6,p,a,span,label,button{
             @include min(768){font-size: clamp(1.8rem, 3vw, 3rem);}
 
             &.-s-Btn{
-                font-size: 1.75rem;
+                font-size: 1.7rem;
                 @include min(768){font-size: clamp(1.8rem, 2vw, 2.5rem);}
             }
         }
