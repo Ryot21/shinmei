@@ -220,6 +220,86 @@
                 }
             }
         }
+        &.-pageContent{
+            flex-wrap: wrap;
+            li{
+                @include max(768){
+                    &:nth-child(1){width: 92%;}
+                    &:nth-child(2){
+                        width: auto;
+                        margin: auto !important;
+                    }
+                }
+                @include min(768){
+                    &:nth-child(1){
+                        width: 53%;
+                        margin: 0 !important;
+                    }
+                    &:nth-child(2){
+                        width: 43%;
+                        margin: 0 !important;
+                    }
+                }
+                @include min(1000){
+                    &:nth-child(1){
+                        width: 53%;
+                        margin: 0 !important;
+                    }
+                    &:nth-child(2){
+                        width: 43%;
+                        margin: 0 !important;
+                    }
+                }
+                @include min(1200){
+                    &:nth-child(1){
+                        width: 53%;
+                        margin: 0 !important;
+                    }
+                    &:nth-child(2){
+                        width: 41%;
+                        margin: 0 !important;
+                    }
+                }
+                @include min(1400){
+                    &:nth-child(1){
+                        width: 53%;
+                        margin: 0 !important;
+                    }
+                    &:nth-child(2){
+                        width: 35%;
+                        margin: 0 !important;
+                    }
+                }
+                @include min(1600){
+                    &:nth-child(1){
+                        width: 53%;
+                        margin: 0 !important;
+                    }
+                    &:nth-child(2){
+                        width: 32.5%;
+                        margin: 0 !important;
+                    }
+                }
+                @include min(1800){
+                    &:nth-child(1){
+                        width: 53%;
+                        margin: 0 !important;
+                    }
+                    &:nth-child(2){
+                        width: 29.5%;
+                        margin: 0 !important;
+                    }
+                }
+            }
+            &.-r{
+                li{
+                    @include min(768){
+                        &:nth-child(1){margin-left: 15px;}
+                        &:nth-child(2){margin-right: 15px;}
+                    }
+                }
+            }
+        }
         // ページコンテンツ
         &.-ver02{
             flex-wrap: wrap;
@@ -247,6 +327,71 @@
                     @include min(768){
                         &:nth-child(1){margin-left: 15px;}
                         &:nth-child(2){margin-right: 15px;}
+                    }
+                }
+            }
+        }
+        // コンセプトページ > カラーボックスに使用
+        &.-colorBox_lists{
+            flex-wrap: wrap;
+            .box-r{
+                border-radius: 20px;
+                overflow: hidden;
+            }
+            li{
+                width: 90%;
+                margin: 0;
+                overflow: hidden;
+                &:nth-child(1){
+                    margin-right: 2% !important;
+                }
+                &:nth-child(2){
+                    margin-left: 2% !important;
+                }
+                @include min(768){
+                    width: calc(50% - 3%);
+                    &:nth-child(odd){
+                        margin-right: 3% !important;
+                    }
+                    &:nth-child(even){
+                        margin-left: 3% !important;
+                    }
+                }
+                &.text{
+                    @include min(768){width: calc(35% - 15px);}
+                }
+                &.img{
+                    @include min(768){width: calc(65% - 15px);}
+                }
+            }
+            &.-r{
+                li{
+                    width: 90%;
+                    margin: 0;
+                    &:nth-child(odd){
+                        margin-right: auto !important;
+                        margin-left: 2% !important;
+                    }
+                    &:nth-child(even){
+                        margin-right: 2% !important;
+                        margin-left: auto !important;
+                    }
+                    @include min(768){
+                        width: calc(50% - 3%);
+                        &:nth-child(odd){
+                            margin-right: auto !important;
+                            margin-left: 3% !important;
+                        }
+                        &:nth-child(even){
+                            margin-right: 3% !important;
+                            margin-left: auto !important;
+                        }
+                    }
+                    &.text{
+                        @include min(768){width: calc(35% - 15px);}
+                    }
+                    &.img{
+                        @include min(768){width: calc(65% - 15px);}
                     }
                 }
             }

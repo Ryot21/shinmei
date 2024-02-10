@@ -67,6 +67,14 @@
                     animation-range: entry -20% contain 30%;
                 }
             }
+            &.-sc{
+                animation-timeline: view();
+                animation-range: entry 0% contain 50%;
+                img{
+                    animation-timeline: view();
+                    animation-range: entry 0% contain 50%;
+                }
+            }
             &.-sc20{
                 animation-timeline: view();
                 animation-range: entry 20% contain 30%;

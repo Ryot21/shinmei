@@ -16,7 +16,7 @@
 		background-image: url(../images/bg/top-bg_s.jpg);
 		background-size: cover;
 		background-position: top center;
-		background-repeat: no-repeat;
+		background-repeat: repeat-y;
 		@include min(768){
 			background-image: url(../images/bg/top-bg.jpg);
 		}
@@ -466,23 +466,176 @@
 				}
 			}
 
-			// CONCEPTページ > 
+			// CONCEPTページ >
 			&.-concept-area01{
-				.imgBox{}
-				.c-contentsBox{
-					&.-item{
-						width: 50%;
-						@include min(768){
-							width: 33.3333%;
-						}
+				width: 59%;
+				@include min(768){
+					width: 35%;
+				}
+				@include min(1000){
+					width: 30%;
+				}
+				&.-item01{
+					top: 0%;
+					left: -4%;
+					@include min(768){
+						top: 0%;
+						left: 0%;
 					}
-					&.-item01{
-						top: 50%;
+				}
+				&.-item02{
+					top: 12%;
+					left: 50%;
+					@include min(768){
+						top: 27%;
+    					left: 37%;
+						width: 28%;
+					}
+				}
+				&.-item03{
+					top: 39%;
+					left: -14%;
+					@include max(768){
+						width: 69%;
+					}
+					@include min(768){
+						top: 7%;
+						left: auto;
+						right: 0;
+						width: 31%;
+					}
+				}
+				&.-item04{
+					top: 57%;
+					left: 45%;
+					@include max(768){
+						width: 65%;
+					}
+					@include min(768){
+						top: auto;
+						left: 0;
+						bottom: 1%;
+						width: 34%;
+					}
+				}
+				&.-item05{
+					top: 70%;
+					left: -10%;
+					@include max(768){
+						width: 70%;
+					}
+					@include min(768){
+						top: auto;
+						left: auto;
+						right: 0;
+						bottom: -5%;
+					}
+					@include min(1200){
+						bottom: 0;
+					}
+				}
+			}
+			&.-concept-area02{//01.LIFESTYLE
+				top: 62.5%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				width: 100%;
+				z-index: -1;
+				@include min(1400){top: 55%;}
+				@include min(1600){top: 52%;}
+				&_item01{
+					top: 30%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					width: 88%;
+					@include min(768){top: 39%;}
+				}
+				&_item02{
+					top: 30%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					width: 88%;
+					@include min(768){
+					}
+				}
+				&_item03{
+					top: 29%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					width: 88%;
+					@include min(768){
+					}
+				}
+				&_item04{
+					top: 31%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					width: 88%;
+					@include min(768){
+					}
+				}
+			}
+			&.-concept-area03{//02.LIFESTYLE
+				top: 62.5%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				width: 100%;
+				z-index: -1;
+				@include min(768){top: 62%;}
+				@include min(1400){top: 55%;}
+				@include min(1600){top: 52%;}
+				&_item01{
+					top: 30%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					width: 88%;
+					@include min(768){top: 25%;}
+				}
+				&_item02{
+					top: 30%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					width: 88%;
+					@include min(768){
+					}
+				}
+				&_item03{
+					top: 29%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					width: 88%;
+					@include min(768){
+					}
+				}
+				&_item04{
+					top: 26%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					width: 88%;
+					@include min(768){
+					}
+				}
+			}
+			&.-concept-area04{//RESERV$E
+				&-item01{
+					top: 60%;
+					left: 56%;
+					transform: translate(-50%, -50%);
+					width: 80%;
+					z-index: -1;
+					@include min(768){
+						top: 90%;
 						left: 50%;
-						transform: translate(-50%, -50%);
-						@include min(768){
+						transform: translate(0%, -50%);
+						width: 50%;
+						max-width: 550px;
+						z-index: 1;
 
-						}
+					}
+					a{
+						display: block;
+						border-radius: 20px;
+						overflow: hidden;
 					}
 				}
 			}

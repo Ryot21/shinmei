@@ -3,7 +3,7 @@
 // 横幅
 .w1100{
     @include min(768){
-        width: 90%;
+        width: 90% !important;
         margin: auto;
     }
     @include min(1100){
@@ -178,6 +178,13 @@
         width: 45%;
         @include min(768){
             width: 50%;
+        }
+    }
+    &.-contentTitle{// ページタイトル
+        width: 100%;
+        @include min(768){
+            width: 70%;
+            margin: auto;
         }
     }
     &.-top{// TOPページ

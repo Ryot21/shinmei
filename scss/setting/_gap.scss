@@ -29,6 +29,10 @@
 .mgb25s {@include max(768){margin-bottom: 25% !important;}}
 .mgb30s {@include max(768){margin-bottom: 30% !important;}}
 
+// 1600px以上
+.mgb-20pc {@include min(1600){margin-bottom: -20% !important;}}
+.mgb-10pc {@include min(1600){margin-bottom: -10% !important;}}
+.mgb-5pc  {@include min(1600){margin-bottom: -5% !important;}}
 // 768px以上
 .mgb-20 {@include min(768){margin-bottom: -20% !important;}}
 .mgb-10 {@include min(768){margin-bottom: -10% !important;}}
