@@ -170,10 +170,13 @@
         box-shadow: 1px 3px 5px 1px rgb(0 0 0 / 34%);
     }
 }
+.box-r{
+    border-radius: 20px;
+    overflow: hidden;
+}
 
 // タイトル関係
 .c-title{
-
     &.-pageTitle{// ページタイトル
         width: 45%;
         @include min(768){
@@ -191,6 +194,30 @@
         width: 45%;
         @include min(768){
             width: 40%;
+        }
+    }
+}
+
+// アイコン関係
+.c-logo{
+    &.-camp{
+        width: 50%;
+        @include max(768){
+            text-align: end;
+        }
+        @include min(768){
+            width: 40%;
+        }
+    }
+    &.-bbq{
+        width: 50%;
+        @include max(768){
+            text-align: end;
+        }
+        @include min(768){
+            width: 40%;
+            margin-right: 10%;
+            margin-left: auto;
         }
     }
 }

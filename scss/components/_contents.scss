@@ -431,6 +431,12 @@
 					z-index: 1;
 				}
 			}
+			&.-text{
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				width: 90%;
+			}
 
 			// TOPページ > バナー関係
 			&.-top-banner_title{
@@ -637,6 +643,64 @@
 						border-radius: 20px;
 						overflow: hidden;
 					}
+				}
+			}
+
+			// LOCATIONページ 
+			&.-cover{
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				width: 100%;
+				height: 100%;
+				background: rgba(0, 0, 0, 0.589);
+				border-radius: 20px;
+			}
+			&.-location-item01{
+				top: 28%;
+				left: 53%;
+				transform: translate(-50%, -50%);
+				width: 86%;
+				@include max(768){
+					z-index: -1;
+				}
+				@include min(768){
+					top: 35%;
+					left: 72%;
+					width: 42%;
+				}
+
+				&.-r{
+					top: 28%;
+					left: 47%;
+					transform: translate(-50%, -50%);
+					width: 86%;
+					@include max(768){
+						z-index: -1;
+					}
+					@include min(768){
+						top: 35%;
+						left: 28%;
+						width: 42%;
+					}
+				}
+			}
+			&.-location-listsArea01{
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				width: 100%;
+				@include min(768){
+					top: 50%;
+				}
+			}
+			&.-location-listsArea02{
+				top: 79%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				width: 100%;
+				@include min(768){
+					top: 75%;
 				}
 			}
 		}

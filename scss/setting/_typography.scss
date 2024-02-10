@@ -338,7 +338,7 @@ p, span, a {
                 width: 73%;
             }
         }
-        &::after{ content: "ロケーション"; }
+        &::after{ content: "アウトドア編"; }
     }
     &.Information{
         &::before{
@@ -360,6 +360,51 @@ p, span, a {
         &::after{ content: "インフォメーション"; }
     }
 }
+
+// タイトル
+h2{
+    &.c-title-Top,
+    &.c-title-concept,
+    &.c-title-plan,
+    &.c-title-Grallery,
+    &.c-title-Location,
+    &.c-title-Information{
+        position: relative;
+        &::after{
+            position: absolute;
+            left: 50%;
+            bottom: -100%;
+            transform: translateX(-50%);
+            font-size: 1rem;
+            font-family: $f-mincho;
+            font-style: normal;
+            @include min(768){
+                font-size: 1.4rem;
+                bottom: -40%;
+            }
+            @include min(1000){
+                bottom: -50%;
+            }
+            @include min(1400){
+                bottom: -60%;
+            }
+        }
+    }
+    &.c-title-Location{
+        &::after{
+            content: "";
+            background: url(../images/SVG/outdoor.svg);
+            background-repeat: no-repeat;
+            width: 20%;
+            height: 100%;
+            @include min(768){
+                width: 7%;
+                height: 42%;
+            }
+        }
+    }
+}
+
 
 // span
 span{

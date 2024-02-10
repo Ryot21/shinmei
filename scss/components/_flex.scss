@@ -6,7 +6,17 @@
     &.-h-c{align-items: center;}
     &.-h-c_s{@include max(768){align-items: center;}}
     &.-h-c_pc{@include min(768){align-items: center;}}
+    // 縦 > 上
+    &.-h-t{align-items: flex-start;}
+    &.-h-t_s{@include max(768){align-items: flex-start;}}
+    &.-h-t_pc{@include min(768){align-items: flex-start;}}
+    // 縦 > 下
+    &.-h-b{align-items: flex-end;}
+    &.-h-b_s{@include max(768){align-items: flex-end;}}
+    &.-h-b_pc{@include min(768){align-items: flex-end;}}
 
+    
+    &.-d-c_sp{@include max(768){flex-direction: column;}}
     // 反転
     &.-r{ flex-direction: row-reverse !important;}
     &.-r_s{ @include max(768){flex-direction: row-reverse !important;}}
@@ -302,7 +312,7 @@
         }
         // ページコンテンツ
         &.-ver02{
-            flex-wrap: wrap;
+            // flex-wrap: wrap;
             li{
                 @include max(768){
                     &:nth-child(1){width: calc(90% - 15px);}
@@ -331,13 +341,36 @@
                 }
             }
         }
+        &.-ver03{
+            // flex-wrap: wrap;
+            li{
+                @include max(768){
+                    &:nth-child(1){width: calc(50% - 15px);}
+                    &:nth-child(2){width: auto;}
+                }
+                @include min(768){
+                    &:nth-child(1){
+                        width: calc(50% - 15px);
+                        margin-right: 15px;
+                    }
+                    &:nth-child(2){
+                        width: calc(50% - 15px);
+                        margin-left: 15px;
+                    }
+                }
+            }
+            &.-r{
+                li{
+                    @include min(768){
+                        &:nth-child(1){margin-left: 15px;}
+                        &:nth-child(2){margin-right: 15px;}
+                    }
+                }
+            }
+        }
         // コンセプトページ > カラーボックスに使用
         &.-colorBox_lists{
             flex-wrap: wrap;
-            .box-r{
-                border-radius: 20px;
-                overflow: hidden;
-            }
             li{
                 width: 90%;
                 margin: 0;
@@ -469,6 +502,31 @@
             }    
         }
     }
+    // コンテンツ_カラム（sp:2 pc:4）
+    &.-col2_4{
+        flex-wrap: wrap;
+        li{
+            width: calc(50% - 5px);
+            @include max(768){
+                &:nth-child(odd){margin-right: 5px;}
+                &:nth-child(even){margin-left: 5px;}
+            }
+            @include min(768){
+                width: calc(25% - 10px);
+                &:nth-child(1),
+                &:nth-child(5){margin-right: 10px;}
+                
+                &:nth-child(2),
+                &:nth-child(6){margin: 0 5px 0 5px;}
+
+                &:nth-child(3),
+                &:nth-child(7){margin: 0 5px 0 5px;}
+
+                &:nth-child(4),
+                &:nth-child(8){margin-left: 10px;}
+            }    
+        }
+    }
     // コンテンツ_カラム（sp:1 pc:3）
     &.-col1_3{
         flex-wrap: wrap;
@@ -489,7 +547,6 @@
             }    
         }
     }
-
     // コンテンツ_カラム（sp,pc:5）
     &.-col5{
         li{

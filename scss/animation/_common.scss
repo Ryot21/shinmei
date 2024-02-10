@@ -59,6 +59,14 @@
                 img{animation-duration:20s}
             }
             // スクロール化
+            &.-sc-40{
+                animation-timeline: view();
+                animation-range: entry -30% contain -20%;
+                img{
+                    animation-timeline: view();
+                    animation-range: entry -30% contain -20%;
+                }
+            }
             &.-sc-20{
                 animation-timeline: view();
                 animation-range: entry -20% contain 30%;
