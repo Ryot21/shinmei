@@ -553,6 +553,32 @@
             width: calc(100%/5);
         }
     }
+    // コンテンツ_カラム（sp:3,pc:6）
+    &.-col3_6{
+        flex-wrap: wrap;
+        li{
+            width: calc(33.3333% - 5px);
+            @include max(768){
+                &:nth-child(1),
+                &:nth-child(4){margin-right: 5px;}
+                &:nth-child(2),
+                &:nth-child(5){margin: 0 2.5px;}
+                &:nth-child(3),
+                &:nth-child(6){margin-left: 5px;}
+            }
+            @include min(768){
+                width: calc(calc(100%/6) - 10px);
+                &:nth-child(1){margin-right: 5px;}
+                
+                &:nth-child(2),
+                &:nth-child(3),
+                &:nth-child(4),
+                &:nth-child(5){margin: 0 5px 0 5px;}
+
+                &:nth-child(6){margin-left: 5px;}
+            }
+        }
+    }
 
 
     // ------------- お店の情報 --------------

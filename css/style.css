@@ -233,6 +233,9 @@ h1.-color02, h2.-color02, h3.-color02, h4.-color02, h5.-color02, h6.-color02, p.
 h1.-color03, h2.-color03, h3.-color03, h4.-color03, h5.-color03, h6.-color03, p.-color03, a.-color03, span.-color03, label.-color03, button.-color03 {
   color: #e38b00;
 }
+h1.-color04, h2.-color04, h3.-color04, h4.-color04, h5.-color04, h6.-color04, p.-color04, a.-color04, span.-color04, label.-color04, button.-color04 {
+  color: #5ba434;
+}
 h1.-house_c01, h2.-house_c01, h3.-house_c01, h4.-house_c01, h5.-house_c01, h6.-house_c01, p.-house_c01, a.-house_c01, span.-house_c01, label.-house_c01, button.-house_c01 {
   color: #b6b343;
 }
@@ -605,10 +608,10 @@ p.Information::after, span.Information::after, a.Information::after {
   content: "インフォメーション";
 }
 
-h2.c-title-Top, h2.c-title-concept, h2.c-title-plan, h2.c-title-Grallery, h2.c-title-Location, h2.c-title-Information {
+h2.c-title-Top, h2.c-title-concept, h2.c-title-plan, h2.c-title-Grallery, h2.c-title-Location, h2.c-title-Shopping, h2.c-title-Information {
   position: relative;
 }
-h2.c-title-Top::after, h2.c-title-concept::after, h2.c-title-plan::after, h2.c-title-Grallery::after, h2.c-title-Location::after, h2.c-title-Information::after {
+h2.c-title-Top::after, h2.c-title-concept::after, h2.c-title-plan::after, h2.c-title-Grallery::after, h2.c-title-Location::after, h2.c-title-Shopping::after, h2.c-title-Information::after {
   position: absolute;
   left: 50%;
   bottom: -100%;
@@ -618,18 +621,18 @@ h2.c-title-Top::after, h2.c-title-concept::after, h2.c-title-plan::after, h2.c-t
   font-style: normal;
 }
 @media (width >= 768px) {
-  h2.c-title-Top::after, h2.c-title-concept::after, h2.c-title-plan::after, h2.c-title-Grallery::after, h2.c-title-Location::after, h2.c-title-Information::after {
+  h2.c-title-Top::after, h2.c-title-concept::after, h2.c-title-plan::after, h2.c-title-Grallery::after, h2.c-title-Location::after, h2.c-title-Shopping::after, h2.c-title-Information::after {
     font-size: 1.4rem;
     bottom: -40%;
   }
 }
 @media (width >= 1000px) {
-  h2.c-title-Top::after, h2.c-title-concept::after, h2.c-title-plan::after, h2.c-title-Grallery::after, h2.c-title-Location::after, h2.c-title-Information::after {
+  h2.c-title-Top::after, h2.c-title-concept::after, h2.c-title-plan::after, h2.c-title-Grallery::after, h2.c-title-Location::after, h2.c-title-Shopping::after, h2.c-title-Information::after {
     bottom: -50%;
   }
 }
 @media (width >= 1400px) {
-  h2.c-title-Top::after, h2.c-title-concept::after, h2.c-title-plan::after, h2.c-title-Grallery::after, h2.c-title-Location::after, h2.c-title-Information::after {
+  h2.c-title-Top::after, h2.c-title-concept::after, h2.c-title-plan::after, h2.c-title-Grallery::after, h2.c-title-Location::after, h2.c-title-Shopping::after, h2.c-title-Information::after {
     bottom: -60%;
   }
 }
@@ -642,6 +645,19 @@ h2.c-title-Location::after {
 }
 @media (width >= 768px) {
   h2.c-title-Location::after {
+    width: 7%;
+    height: 42%;
+  }
+}
+h2.c-title-Shopping::after {
+  content: "";
+  background: url(../images/SVG/Shopping.svg);
+  background-repeat: no-repeat;
+  width: 20%;
+  height: 100%;
+}
+@media (width >= 768px) {
+  h2.c-title-Shopping::after {
     width: 7%;
     height: 42%;
   }
@@ -4668,6 +4684,42 @@ button.swiper-pagination-bullet {
     width: 42%;
   }
 }
+.c-contents.-imgBg .c-contentsBox.-location-item02 {
+  top: 14.5%;
+  left: 53%;
+  transform: translate(-50%, -50%);
+  width: 86%;
+}
+@media (768px >= width) {
+  .c-contents.-imgBg .c-contentsBox.-location-item02 {
+    z-index: -1;
+  }
+}
+@media (width >= 768px) {
+  .c-contents.-imgBg .c-contentsBox.-location-item02 {
+    top: 25%;
+    left: 72%;
+    width: 42%;
+  }
+}
+.c-contents.-imgBg .c-contentsBox.-location-item02.-r {
+  top: 28%;
+  left: 47%;
+  transform: translate(-50%, -50%);
+  width: 86%;
+}
+@media (768px >= width) {
+  .c-contents.-imgBg .c-contentsBox.-location-item02.-r {
+    z-index: -1;
+  }
+}
+@media (width >= 768px) {
+  .c-contents.-imgBg .c-contentsBox.-location-item02.-r {
+    top: 35%;
+    left: 28%;
+    width: 42%;
+  }
+}
 .c-contents.-imgBg .c-contentsBox.-location-listsArea01 {
   top: 50%;
   left: 50%;
@@ -4679,6 +4731,14 @@ button.swiper-pagination-bullet {
     top: 50%;
   }
 }
+.c-contents.-imgBg .c-contentsBox.-location-listsArea01.-ver02 {
+  top: 28.2%;
+}
+@media (width >= 768px) {
+  .c-contents.-imgBg .c-contentsBox.-location-listsArea01.-ver02 {
+    top: 37%;
+  }
+}
 .c-contents.-imgBg .c-contentsBox.-location-listsArea02 {
   top: 79%;
   left: 50%;
@@ -4688,6 +4748,17 @@ button.swiper-pagination-bullet {
 @media (width >= 768px) {
   .c-contents.-imgBg .c-contentsBox.-location-listsArea02 {
     top: 75%;
+  }
+}
+.c-contents.-imgBg .c-contentsBox.-location-listsArea03 {
+  top: 67%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+@media (width >= 768px) {
+  .c-contents.-imgBg .c-contentsBox.-location-listsArea03 {
+    top: 74%;
   }
 }
 
@@ -5593,6 +5664,37 @@ button.swiper-pagination-bullet {
 }
 .c-flex.-col5 li {
   width: 20%;
+}
+.c-flex.-col3_6 {
+  flex-wrap: wrap;
+}
+.c-flex.-col3_6 li {
+  width: calc(33.3333% - 5px);
+}
+@media (768px >= width) {
+  .c-flex.-col3_6 li:nth-child(1), .c-flex.-col3_6 li:nth-child(4) {
+    margin-right: 5px;
+  }
+  .c-flex.-col3_6 li:nth-child(2), .c-flex.-col3_6 li:nth-child(5) {
+    margin: 0 2.5px;
+  }
+  .c-flex.-col3_6 li:nth-child(3), .c-flex.-col3_6 li:nth-child(6) {
+    margin-left: 5px;
+  }
+}
+@media (width >= 768px) {
+  .c-flex.-col3_6 li {
+    width: calc(16.6666666667% - 10px);
+  }
+  .c-flex.-col3_6 li:nth-child(1) {
+    margin-right: 5px;
+  }
+  .c-flex.-col3_6 li:nth-child(2), .c-flex.-col3_6 li:nth-child(3), .c-flex.-col3_6 li:nth-child(4), .c-flex.-col3_6 li:nth-child(5) {
+    margin: 0 5px 0 5px;
+  }
+  .c-flex.-col3_6 li:nth-child(6) {
+    margin-left: 5px;
+  }
 }
 .c-flex.-shop-information {
   flex-wrap: wrap;

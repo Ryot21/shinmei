@@ -80,6 +80,7 @@ h1,h2,h3,h4,h5,h6,p,a,span,label,button{
     &.-color01{color: $site-color01;}
     &.-color02{color: $site-color02;}
     &.-color03{color: $site-color03;}
+    &.-color04{color: $site-color04;}
     &.-house_c01{color: $house-color01;}
     &.-house_c02{color: $house-color02;}
     &.-house_c03{color: $house-color03;}
@@ -368,6 +369,7 @@ h2{
     &.c-title-plan,
     &.c-title-Grallery,
     &.c-title-Location,
+    &.c-title-Shopping,
     &.c-title-Information{
         position: relative;
         &::after{
@@ -403,6 +405,20 @@ h2{
             }
         }
     }
+    &.c-title-Shopping{
+        &::after{
+            content: "";
+            background: url(../images/SVG/Shopping.svg);
+            background-repeat: no-repeat;
+            width: 20%;
+            height: 100%;
+            @include min(768){
+                width: 7%;
+                height: 42%;
+            }
+        }
+    }
+
 }
 
 
