@@ -608,10 +608,10 @@ p.Information::after, span.Information::after, a.Information::after {
   content: "インフォメーション";
 }
 
-h2.c-title-Top, h2.c-title-concept, h2.c-title-plan, h2.c-title-Grallery, h2.c-title-Location, h2.c-title-Shopping, h2.c-title-Information {
+h2.c-title-Top, h2.c-title-concept, h2.c-title-plan, h2.c-title-Grallery, h2.c-title-Location, h2.c-title-Shopping, h2.c-title-Life, h2.c-title-Access, h2.c-title-Information {
   position: relative;
 }
-h2.c-title-Top::after, h2.c-title-concept::after, h2.c-title-plan::after, h2.c-title-Grallery::after, h2.c-title-Location::after, h2.c-title-Shopping::after, h2.c-title-Information::after {
+h2.c-title-Top::after, h2.c-title-concept::after, h2.c-title-plan::after, h2.c-title-Grallery::after, h2.c-title-Location::after, h2.c-title-Shopping::after, h2.c-title-Life::after, h2.c-title-Access::after, h2.c-title-Information::after {
   position: absolute;
   left: 50%;
   bottom: -100%;
@@ -621,18 +621,18 @@ h2.c-title-Top::after, h2.c-title-concept::after, h2.c-title-plan::after, h2.c-t
   font-style: normal;
 }
 @media (width >= 768px) {
-  h2.c-title-Top::after, h2.c-title-concept::after, h2.c-title-plan::after, h2.c-title-Grallery::after, h2.c-title-Location::after, h2.c-title-Shopping::after, h2.c-title-Information::after {
+  h2.c-title-Top::after, h2.c-title-concept::after, h2.c-title-plan::after, h2.c-title-Grallery::after, h2.c-title-Location::after, h2.c-title-Shopping::after, h2.c-title-Life::after, h2.c-title-Access::after, h2.c-title-Information::after {
     font-size: 1.4rem;
     bottom: -40%;
   }
 }
 @media (width >= 1000px) {
-  h2.c-title-Top::after, h2.c-title-concept::after, h2.c-title-plan::after, h2.c-title-Grallery::after, h2.c-title-Location::after, h2.c-title-Shopping::after, h2.c-title-Information::after {
+  h2.c-title-Top::after, h2.c-title-concept::after, h2.c-title-plan::after, h2.c-title-Grallery::after, h2.c-title-Location::after, h2.c-title-Shopping::after, h2.c-title-Life::after, h2.c-title-Access::after, h2.c-title-Information::after {
     bottom: -50%;
   }
 }
 @media (width >= 1400px) {
-  h2.c-title-Top::after, h2.c-title-concept::after, h2.c-title-plan::after, h2.c-title-Grallery::after, h2.c-title-Location::after, h2.c-title-Shopping::after, h2.c-title-Information::after {
+  h2.c-title-Top::after, h2.c-title-concept::after, h2.c-title-plan::after, h2.c-title-Grallery::after, h2.c-title-Location::after, h2.c-title-Shopping::after, h2.c-title-Life::after, h2.c-title-Access::after, h2.c-title-Information::after {
     bottom: -60%;
   }
 }
@@ -653,12 +653,38 @@ h2.c-title-Shopping::after {
   content: "";
   background: url(../images/SVG/Shopping.svg);
   background-repeat: no-repeat;
-  width: 20%;
+  width: 23%;
   height: 100%;
 }
 @media (width >= 768px) {
   h2.c-title-Shopping::after {
     width: 7%;
+    height: 42%;
+  }
+}
+h2.c-title-Life::after {
+  content: "";
+  background: url(../images/SVG/life.svg);
+  background-repeat: no-repeat;
+  width: 12%;
+  height: 100%;
+}
+@media (width >= 768px) {
+  h2.c-title-Life::after {
+    width: 5%;
+    height: 42%;
+  }
+}
+h2.c-title-Access::after {
+  content: "";
+  background: url(../images/SVG/access.svg);
+  background-repeat: no-repeat;
+  width: 12%;
+  height: 100%;
+}
+@media (width >= 768px) {
+  h2.c-title-Access::after {
+    width: 5%;
     height: 42%;
   }
 }
@@ -5629,16 +5655,13 @@ button.swiper-pagination-bullet {
   .c-flex.-col2_4 li {
     width: calc(25% - 10px);
   }
-  .c-flex.-col2_4 li:nth-child(1), .c-flex.-col2_4 li:nth-child(5) {
+  .c-flex.-col2_4 li:nth-child(1), .c-flex.-col2_4 li:nth-child(5), .c-flex.-col2_4 li:nth-child(9) {
     margin-right: 10px;
   }
-  .c-flex.-col2_4 li:nth-child(2), .c-flex.-col2_4 li:nth-child(6) {
+  .c-flex.-col2_4 li:nth-child(2), .c-flex.-col2_4 li:nth-child(3), .c-flex.-col2_4 li:nth-child(6), .c-flex.-col2_4 li:nth-child(7), .c-flex.-col2_4 li:nth-child(10), .c-flex.-col2_4 li:nth-child(11) {
     margin: 0 5px 0 5px;
   }
-  .c-flex.-col2_4 li:nth-child(3), .c-flex.-col2_4 li:nth-child(7) {
-    margin: 0 5px 0 5px;
-  }
-  .c-flex.-col2_4 li:nth-child(4), .c-flex.-col2_4 li:nth-child(8) {
+  .c-flex.-col2_4 li:nth-child(4), .c-flex.-col2_4 li:nth-child(8), .c-flex.-col2_4 li:nth-child(12) {
     margin-left: 10px;
   }
 }
