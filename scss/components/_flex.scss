@@ -312,7 +312,9 @@
         }
         // ページコンテンツ
         &.-ver02{
-            // flex-wrap: wrap;
+            @include max(768){
+                flex-wrap: wrap;
+            }
             li{
                 @include max(768){
                     &:nth-child(1){width: calc(90% - 15px);}

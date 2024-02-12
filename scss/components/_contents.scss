@@ -684,6 +684,12 @@
 						width: 42%;
 					}
 				}
+				&.-test{
+					top: 65%;
+					@include min(768){
+
+					}
+				}
 			}
 			&.-location-item02{
 				top: 14.5%;
@@ -746,6 +752,18 @@
 				@include min(768){
 					top: 74%;
 				}
+			}
+
+			// 画像 > 〇
+			&.-circle{
+				top: 75%;
+				transform: translate(-50%, -50%);
+				width: 22%;
+				@include min(768){
+					width:20%;
+				}
+				&.-left{left: 15%;}
+				&.-right{right: -5%;}
 			}
 		}
 	}
