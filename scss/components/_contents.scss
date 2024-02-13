@@ -669,6 +669,11 @@
 					left: 72%;
 					width: 42%;
 				}
+				@include min(1600){
+					max-width: 550px;
+					top: 60% !important;
+					left: 65% !important;
+				}
 
 				&.-r{
 					top: 28%;
@@ -683,10 +688,15 @@
 						left: 28%;
 						width: 42%;
 					}
+					@include min(1600){
+						max-width: 550px;
+						top: 60% !important;
+						left: 34.5% !important;
+					}
 				}
 				&.-test{
 					top: 65%;
-					@include min(768){
+					@include min(1600){
 
 					}
 				}
@@ -701,8 +711,13 @@
 				}
 				@include min(768){
 					top: 25%;
-					left: 72%;
-					width: 42%;
+					left: 74%;
+					width: 45%;
+				}
+				@include min(1600){
+					max-width: 560px;
+					top: 26%;
+    				left: 67%;
 				}
 
 				&.-r{
@@ -750,7 +765,37 @@
 				transform: translate(-50%, -50%);
 				width: 100%;
 				@include min(768){
-					top: 74%;
+					top: 76%;
+				}
+				@include min(1400){
+					top: 74% !important;
+				}
+				@include min(1500){
+					top: 71% !important;
+				}
+			}
+
+			// 住協の家づくり
+			&.-quality-self{
+				@include min(768){
+					top: 20%;
+					left: 9%;
+					width: 50%;
+				}
+			}
+			&.-quality-hon{
+				@include min(768){
+					top: 50%;
+					left: 61%;
+					width: 20%;
+				}
+				&_text{
+					@include min(768){
+						top: 87%;
+						left: 61%;
+						transform: translate(-50%, -50%);
+						width: 16%;
+					}
 				}
 			}
 

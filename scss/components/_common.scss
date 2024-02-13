@@ -74,9 +74,9 @@
         }
     }
     &.-solid{
-        border: 1px solid $site-color01;
+        border: 1px solid $main-color--b;
         @include min(768){
-            border: 1px solid $site-color01;
+            border: 2px solid $main-color--b;
         }
     }
 }

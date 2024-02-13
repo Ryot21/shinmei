@@ -236,7 +236,7 @@
                 @include max(768){
                     &:nth-child(1){width: 92%;}
                     &:nth-child(2){
-                        width: auto;
+                        width: 65%;
                         margin: auto !important;
                     }
                 }
