@@ -353,7 +353,6 @@
 	// 後日実装コンテンツ
 	&.-comingSoon{
 		&::after{opacity: 0;}
-
 		a{
 			pointer-events: none;
 			&::before{
