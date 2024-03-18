@@ -148,17 +148,16 @@
 .c-img{
     // ボーダー枠
     &.-b-frame{
-        // border: 2px solid $main-color--b;
+        border: 2px solid $main-color--b;
+        border-radius: 20px;
         overflow: hidden;
         &.-left{
-            // border: 2px 2px 2px 0 solid $main-color--b;
             border-top: 2px solid $main-color--b;
             border-right: 2px solid $main-color--b;
             border-bottom: 2px solid $main-color--b;
             border-radius: 0 20px 20px 0;
         }
         &.-right{
-            // border: 2px 0 2px 2px solid $main-color--b;
             border-top: 2px solid $main-color--b;
             border-left: 2px solid $main-color--b;
             border-bottom: 2px solid $main-color--b;
