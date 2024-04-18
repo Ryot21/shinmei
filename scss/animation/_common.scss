@@ -107,7 +107,12 @@
                     animation-range: entry 40% contain 50%;
                 }
             }
-            // シャドウ
+            // --------- ループ ---------
+            &.-loop{
+                animation-iteration-count: infinite;
+                img{animation-iteration-count: infinite;}
+            }
+            // --------- シャドウ ---------
             &.-sh{filter: drop-shadow(2px 2px 2px gray);}
         }
 }

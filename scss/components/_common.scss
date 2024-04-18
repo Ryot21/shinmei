@@ -1,4 +1,25 @@
 // 共通
+// .-ishi{
+//     @include min(768){
+//         position: relative;
+//         .-bg{
+//             position: absolute;
+//             opacity: 0;
+//             transition: all 10s;
+//         }
+//         .-cover{
+//             opacity: 1;
+//             transition: all 10s;
+
+//         }
+//         &:hover{
+//             transition: all 10s;
+
+//             .-bg{opacity: 1;}
+//             .-cover{opacity: 0;}
+//         }
+//     }
+// }
 
 // 横幅
 .w1100{

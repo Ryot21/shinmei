@@ -4138,6 +4138,11 @@ button.swiper-pagination-bullet {
 .c-contents.-f-view {
   position: relative;
 }
+@media (width >= 768px) {
+  .c-contents.-f-view {
+    overflow: hidden;
+  }
+}
 .c-contents.-f-view .imgBox.-top::after {
   content: "";
   position: absolute;
@@ -4291,92 +4296,30 @@ button.swiper-pagination-bullet {
     left: 0%;
   }
 }
-.c-contents.-f-view .c-contentsBox.-f-bird_01 {
-  top: 20%;
-  left: 15%;
-  width: 5%;
+.c-contents.-f-view .c-contentsBox.-f-open {
+  top: 15%;
+  left: 8%;
+  width: 86%;
+  filter: drop-shadow(1px 1px 1px #3b3b3b);
 }
 @media (width >= 768px) {
-  .c-contents.-f-view .c-contentsBox.-f-bird_01 {
-    top: 10%;
-    left: 2%;
-    width: 4%;
-  }
-}
-@media (width >= 1400px) {
-  .c-contents.-f-view .c-contentsBox.-f-bird_01 {
-    top: 10%;
-    left: 15%;
-    width: 3%;
-  }
-}
-.c-contents.-f-view .c-contentsBox.-f-bird_02 {
-  top: 20%;
-  left: 23%;
-  width: 3%;
-}
-@media (width >= 768px) {
-  .c-contents.-f-view .c-contentsBox.-f-bird_02 {
+  .c-contents.-f-view .c-contentsBox.-f-open {
     top: 7%;
-    left: 7%;
-    width: 3%;
+    left: 16%;
+    width: 40%;
   }
 }
-@media (width >= 1400px) {
-  .c-contents.-f-view .c-contentsBox.-f-bird_02 {
-    left: 18%;
-    width: 2%;
-  }
-}
-.c-contents.-f-view .c-contentsBox.-f-bird_03 {
-  top: 35%;
-  left: 77%;
-  width: 5%;
+.c-contents.-f-view .c-contentsBox.-f-flag {
+  top: 78%;
+  left: 62%;
+  width: 35%;
+  filter: drop-shadow(1px 1px 1px #3b3b3b);
 }
 @media (width >= 768px) {
-  .c-contents.-f-view .c-contentsBox.-f-bird_03 {
-    top: 21%;
-    left: 84%;
-    width: 2.5%;
-  }
-}
-@media (width >= 1400px) {
-  .c-contents.-f-view .c-contentsBox.-f-bird_03 {
-    top: 18%;
-    left: 87%;
-    width: 2%;
-  }
-}
-@media (width >= 768px) {
-  .c-contents.-f-view .c-contentsBox.-f-bird_04 {
-    top: 60%;
-    left: 57%;
-    width: 2.5%;
-  }
-}
-@media (width >= 1400px) {
-  .c-contents.-f-view .c-contentsBox.-f-bird_04 {
-    top: 63%;
-    left: 53%;
-    width: 2.5%;
-  }
-}
-.c-contents.-f-view .c-contentsBox.-f-border {
-  top: 36%;
-  left: 25%;
-  width: 50%;
-}
-@media (width >= 768px) {
-  .c-contents.-f-view .c-contentsBox.-f-border {
-    top: 22%;
-    left: 63.5%;
-    width: 20%;
-  }
-}
-@media (width >= 1400px) {
-  .c-contents.-f-view .c-contentsBox.-f-border {
-    top: 20%;
-    left: 65%;
+  .c-contents.-f-view .c-contentsBox.-f-flag {
+    top: -0.5%;
+    left: 68%;
+    width: 15%;
   }
 }
 .c-contents.-f-view .c-contentsBox.-f-text {
@@ -6884,6 +6827,12 @@ a {
 .a-bg-color.-sc40 img, .a-text-color.-sc40 img, .a-rotate-bg.-sc40 img, .a-fade.-sc40 img, .a-fadeUp.-sc40 img, .a-fadeDown.-sc40 img, .a-fadeLeft.-sc40 img, .a-fadeRight.-sc40 img, .a-flipDown.-sc40 img, .a-flipLeft.-sc40 img, .a-flipRight.-sc40 img, .a-moveUp.-sc40 img, .a-moveDown.-sc40 img, .a-scOutImg.-sc40 img, .a-bird_r.-sc40 img, .a-bird_l01.-sc40 img, .a-bird_l02.-sc40 img, .a-purupuru.-sc40 img {
   animation-timeline: view();
   animation-range: entry 40% contain 50%;
+}
+.a-bg-color.-loop, .a-text-color.-loop, .a-rotate-bg.-loop, .a-fade.-loop, .a-fadeUp.-loop, .a-fadeDown.-loop, .a-fadeLeft.-loop, .a-fadeRight.-loop, .a-flipDown.-loop, .a-flipLeft.-loop, .a-flipRight.-loop, .a-moveUp.-loop, .a-moveDown.-loop, .a-scOutImg.-loop, .a-bird_r.-loop, .a-bird_l01.-loop, .a-bird_l02.-loop, .a-purupuru.-loop {
+  animation-iteration-count: infinite;
+}
+.a-bg-color.-loop img, .a-text-color.-loop img, .a-rotate-bg.-loop img, .a-fade.-loop img, .a-fadeUp.-loop img, .a-fadeDown.-loop img, .a-fadeLeft.-loop img, .a-fadeRight.-loop img, .a-flipDown.-loop img, .a-flipLeft.-loop img, .a-flipRight.-loop img, .a-moveUp.-loop img, .a-moveDown.-loop img, .a-scOutImg.-loop img, .a-bird_r.-loop img, .a-bird_l01.-loop img, .a-bird_l02.-loop img, .a-purupuru.-loop img {
+  animation-iteration-count: infinite;
 }
 .a-bg-color.-sh, .a-text-color.-sh, .a-rotate-bg.-sh, .a-fade.-sh, .a-fadeUp.-sh, .a-fadeDown.-sh, .a-fadeLeft.-sh, .a-fadeRight.-sh, .a-flipDown.-sh, .a-flipLeft.-sh, .a-flipRight.-sh, .a-moveUp.-sh, .a-moveDown.-sh, .a-scOutImg.-sh, .a-bird_r.-sh, .a-bird_l01.-sh, .a-bird_l02.-sh, .a-purupuru.-sh {
   filter: drop-shadow(2px 2px 2px gray);
