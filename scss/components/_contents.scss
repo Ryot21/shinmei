@@ -190,13 +190,13 @@
 					left: 0;
 					width: 100%;
 					height: 100%;
-					background-image: url(../images/f-view/f-view_s.jpg);
+					background-image: url(../images/f-view/0505/f-view_s.jpg);
 					background-repeat: no-repeat;
 					background-size: cover;
 					background-position: left bottom;
 					z-index: -1;
 					@include min(768){
-						background-image: url(../images/f-view/f-view.jpg);
+						background-image: url(../images/f-view/0505/f-view.jpg);
 					}
 				}
 			}
@@ -269,7 +269,7 @@
 				}
 			}
 			&.-f-subTitle{// サブタイトル
-				top: 40%;
+				top: 52%;
 				left: 50%;
 				transform: translate(-50%, -50%);
 				width: 60%;
@@ -284,10 +284,10 @@
 			}
 			&.-f-logo_s{
 				@include max(768){
-					top: 0%;
-					left: 50%;
+					top: 8%;
+					left: 23%;
 					transform: translate(-50%, -50%);
-					width: 70%;
+					width: 43%;
 					z-index: 1;
 				}
 			}
@@ -327,14 +327,26 @@
 				}
 			}
 			&.-f-flag{
-				top: 78%;
-				left: 62%;
-				width: 35%;
+				// 0418修正用_垂れ幕
+				// top: 78%;
+				// left: 62%;
+				// width: 35%;
+
+				// 0505修正用_雲
+				top: 16%;
+				left: 2.5%;
+				width: 95%;
 				filter: drop-shadow(1px 1px 1px $main-color--b);
 				@include min(768){
-					top: -0.5%;
-					left: 68%;
-					width: 15%;
+					// 0418修正用_垂れ幕
+					// top: -0.5%;
+					// left: 68%;
+					// width: 15%;
+
+					// 0505修正用_雲
+					top: 14.5%;
+					left: 51%;
+					width: 37%;
 				}
 				@include min(1400){
 
@@ -396,18 +408,28 @@
 
 			// TOPページ > バナー関係
 			&.-top-banner_title{
-				top: 71%;
+				top: 90%;
 				left: 50%;
 				transform: translate(-50%, -50%);
-				width: 91%;
+				width: 90%;
+				@include max(768){
+					padding: 1% 0 2%;
+				}
 				@include min(768){
-					top: 45%;
-					left: 73.5%;
+					// top: 45%;
+					// left: 73.5%;
+					// width: 47%;
+					top: 91%;
+					left: 74.5%;
 					width: 47%;
 				}
 				@include min(1200){
-					top: 45%;
-					left: 73.5%;
+					// top: 45%;
+					// left: 73.5%;
+					// width: 47%;
+
+					top: 91%;
+					left: 74.5%;
 					width: 47%;
 				}
 			}
@@ -425,6 +447,44 @@
 					top: 67%;
 					left: 73.5%;
 					width: 47%;
+				}
+			}
+
+			// TOP > カインズコラボ_0505追加
+			&.-cainzBtn{
+				top: 78.5%;
+				left: 70%;
+				transform: translate(-50%, -50%);
+				width: 40%;
+				@include min(768){
+					top: 95.5%;
+					left: 85%;
+					transform: translate(-50%, -50%);
+					width: 22%;
+				}
+			}
+			&.-telBox{
+				top: 76%;
+				left: 77%;
+				transform: translate(-50%, -50%);
+				width: 47%;
+				height: 50%;
+				// background: rgba(0, 0, 0, 0.171);
+				@include min(768){
+					top: 52%;
+					left: 75%;
+					width: 29%;
+					height: 31%;
+				}
+				a{
+					@include max(768){
+						display: block;
+						width: 100%;
+						height: 100%;
+					}
+					@include min(768){
+						display: none;
+					}
 				}
 			}
 
