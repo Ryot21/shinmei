@@ -4425,7 +4425,7 @@ button.swiper-pagination-bullet {
 }
 @media (width >= 768px) {
   .c-contents.-imgBg .c-contentsBox.-cainzBtn {
-    top: 95.5%;
+    top: 101.5%;
     left: 85%;
     transform: translate(-50%, -50%);
     width: 22%;
