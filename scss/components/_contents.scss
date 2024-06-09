@@ -183,21 +183,24 @@
 		}
 		.imgBox{
 			&.-top{
+				// 2024_0609_修正
+				z-index: -1;
 				&::after{
-					content:"";
-					position: absolute;
-					top: 0;
-					left: 0;
-					width: 100%;
-					height: 100%;
-					background-image: url(../images/f-view/0505/f-view_s.jpg);
-					background-repeat: no-repeat;
-					background-size: cover;
-					background-position: left bottom;
-					z-index: -1;
-					@include min(768){
-						background-image: url(../images/f-view/0505/f-view.jpg);
-					}
+					// 2024_0609_修正
+					// content:"";
+					// position: absolute;
+					// top: 0;
+					// left: 0;
+					// width: 100%;
+					// height: 100%;
+					// background-image: url(../images/f-view/0505/f-view_s.jpg);
+					// background-repeat: no-repeat;
+					// background-size: cover;
+					// background-position: left bottom;
+					// z-index: -1;
+					// @include min(768){
+					// 	background-image: url(../images/f-view/0505/f-view.jpg);
+					// }
 				}
 			}
 			&.-concept{
@@ -223,63 +226,141 @@
 		}
 		.c-contentsBox{
 			position: absolute;
-			&.-f-title{// タイトル
-				top: 20%;
-				left: 52%;
-				transform: translate(-50%, -50%);
-				width: 75%;
-				@include max(768){
-					// タイトル > 中央
-					&.-f-title_c{
-						&::after{
-							position: absolute;
-							top: 120%;
-							left: 50%;
-							transform: translate(-50%,-50%);
-							font-size: 14px;
-						}
+			&.-f-bg{// 背景画像_2024_0609
+				top: 0%;
+				left: 0%;
+				width: 100%;
+				// opacity: .5;
+				&.-bg01{
+					top: 48.5%;
+					left: 0%;
+					width: 100%;
+					@include min(768){
+						top: 0%;
+						left: 0%;
+						width: 39.3%;
 					}
-					// タイトル > 右下
-					&.-f-title_r{
-						top: 82%;
-    					left: 83%;
-						&::after{
-							position: absolute;
-							top: 120%;
-							left: 70%;
-							transform: translate(-50%,-50%);
-							font-size: 14px;
-						}
+				}
+				&.-bg02{
+					top: 0%;
+					left: 0%;
+					width: 67.1%;
+					@include min(768){
+						top: 0%;
+						left: 39.3%;
+						width: 42.5%;
 					}
-					//　タイトル >  コンセプトページ
-					&.-concept{&::after{content: "コンセプト";}}
-					&.-layout{&::after{content: "レイアウト";}}
-					&.-plan{&::after{content: "プラン";}}
-					&.-equipment{&::after{content: "設備・仕様";}}
-					&.-location{&::after{content: "周辺環境";}}
-
 				}
-				@include min(768){// tb
-					top: 27%;
-					width: 45%;
+				&.-bg03{
+					top: 0%;
+					left: auto;
+					right: 0%;
+					width: 33.4%;
+					@include min(768){
+						top: 0%;
+						left: 81.8%;
+						right: auto;
+						width: calc(100% - calc(39.3% + 42.5%));
+					}
 				}
-				@include min(1400){
-					top: 27%;
-					width: 50%;
+				&.-bg04{
+					top: auto;
+					left: 0%;
+					bottom: 0%;
+					width: 100%;
+					@include min(768){
+						top: 50%;
+						left: 0%;
+						bottom: auto;
+						width: 39.3%;
+					}
+				}
+				&.-bg05{
+					top: 24.2%;
+					left: 0%;
+					width: 33.3%;
+					@include min(768){
+						top: 50%;
+						left: 39.3%;
+						width: 21.3%;
+					}
+				}
+				&.-bg06{
+					top: 24.2%;
+					left: 33.25%;
+					width: 33.3%;
+					@include min(768){
+						top: 50%;
+						left: 60.5%;
+						width: 21.3%;
+					}
 				}
 			}
-			&.-f-subTitle{// サブタイトル
+			&.-f-cover{// カバー画像_2024_0609
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				width: 100%;
+				z-index: 2;
+			}
+			// &.-f-title{// タイトル
+			// 	top: 20%;
+			// 	left: 52%;
+			// 	transform: translate(-50%, -50%);
+			// 	width: 75%;
+			// 	@include max(768){
+			// 		// タイトル > 中央
+			// 		&.-f-title_c{
+			// 			&::after{
+			// 				position: absolute;
+			// 				top: 120%;
+			// 				left: 50%;
+			// 				transform: translate(-50%,-50%);
+			// 				font-size: 14px;
+			// 			}
+			// 		}
+			// 		// タイトル > 右下
+			// 		&.-f-title_r{
+			// 			top: 82%;
+    		// 			left: 83%;
+			// 			&::after{
+			// 				position: absolute;
+			// 				top: 120%;
+			// 				left: 70%;
+			// 				transform: translate(-50%,-50%);
+			// 				font-size: 14px;
+			// 			}
+			// 		}
+			// 		//　タイトル >  コンセプトページ
+			// 		&.-concept{&::after{content: "コンセプト";}}
+			// 		&.-layout{&::after{content: "レイアウト";}}
+			// 		&.-plan{&::after{content: "プラン";}}
+			// 		&.-equipment{&::after{content: "設備・仕様";}}
+			// 		&.-location{&::after{content: "周辺環境";}}
+
+			// 	}
+			// 	@include min(768){// tb
+			// 		top: 27%;
+			// 		width: 45%;
+			// 	}
+			// 	@include min(1400){
+			// 		top: 27%;
+			// 		width: 50%;
+			// 	}
+			// }
+			&.-f-subTitle{// サブタイトル_2024_0609
 				top: 52%;
 				left: 50%;
 				transform: translate(-50%, -50%);
-				width: 60%;
+				width: 90%;
+				z-index: 3;
 				@include min(768){// tb
 					top: 48%;
-					width: 20%;
+					width: 35%;
 				}
 				@include min(1400){
 					top: 48%;
-					width: 20%;
+					width: 38%;
 				}
 			}
 			&.-f-logo_s{
@@ -638,7 +719,7 @@
 					}
 				}
 			}
-			&.-concept-area04{//RESERV$E
+			&.-concept-area04{//RESERVE$E
 				&-item01{
 					top: 60%;
 					left: 56%;

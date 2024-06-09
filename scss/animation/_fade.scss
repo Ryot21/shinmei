@@ -12,6 +12,9 @@
     &-fade{
         animation-name:fadeAnime;
         perspective-origin: left center;
+        animation-fill-mode: forwards;
+
+        opacity: 0;
     }
     @keyframes fadeAnime{
         from {

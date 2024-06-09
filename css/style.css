@@ -1849,7 +1849,7 @@ span.-block {
 }
 
 .swiper-3d .swiper-wrapper {
-  transform-style: preserve-3d;
+  transform-style: pRESERVEe-3d;
 }
 
 .swiper-3d {
@@ -1857,7 +1857,7 @@ span.-block {
 }
 
 .swiper-3d .swiper-cube-shadow, .swiper-3d .swiper-slide {
-  transform-style: preserve-3d;
+  transform-style: pRESERVEe-3d;
 }
 
 .swiper-css-mode > .swiper-wrapper {
@@ -3067,7 +3067,7 @@ button.swiper-pagination-bullet {
   }
 }
 .c-header__popArea .c-header__lists li.logo {
-  width: 50%;
+  width: 80%;
   height: auto;
   margin: auto auto auto 15px;
 }
@@ -4143,23 +4143,8 @@ button.swiper-pagination-bullet {
     overflow: hidden;
   }
 }
-.c-contents.-f-view .imgBox.-top::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url(../images/f-view/0505/f-view_s.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: left bottom;
+.c-contents.-f-view .imgBox.-top {
   z-index: -1;
-}
-@media (width >= 768px) {
-  .c-contents.-f-view .imgBox.-top::after {
-    background-image: url(../images/f-view/0505/f-view.jpg);
-  }
 }
 .c-contents.-f-view .imgBox.-concept::after {
   content: "";
@@ -4183,75 +4168,111 @@ button.swiper-pagination-bullet {
 .c-contents.-f-view .c-contentsBox {
   position: absolute;
 }
-.c-contents.-f-view .c-contentsBox.-f-title {
-  top: 20%;
-  left: 52%;
-  transform: translate(-50%, -50%);
-  width: 75%;
+.c-contents.-f-view .c-contentsBox.-f-bg {
+  top: 0%;
+  left: 0%;
+  width: 100%;
 }
-@media (768px >= width) {
-  .c-contents.-f-view .c-contentsBox.-f-title.-f-title_c::after {
-    position: absolute;
-    top: 120%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 14px;
-  }
-  .c-contents.-f-view .c-contentsBox.-f-title.-f-title_r {
-    top: 82%;
-    left: 83%;
-  }
-  .c-contents.-f-view .c-contentsBox.-f-title.-f-title_r::after {
-    position: absolute;
-    top: 120%;
-    left: 70%;
-    transform: translate(-50%, -50%);
-    font-size: 14px;
-  }
-  .c-contents.-f-view .c-contentsBox.-f-title.-concept::after {
-    content: "コンセプト";
-  }
-  .c-contents.-f-view .c-contentsBox.-f-title.-layout::after {
-    content: "レイアウト";
-  }
-  .c-contents.-f-view .c-contentsBox.-f-title.-plan::after {
-    content: "プラン";
-  }
-  .c-contents.-f-view .c-contentsBox.-f-title.-equipment::after {
-    content: "設備・仕様";
-  }
-  .c-contents.-f-view .c-contentsBox.-f-title.-location::after {
-    content: "周辺環境";
-  }
+.c-contents.-f-view .c-contentsBox.-f-bg.-bg01 {
+  top: 48.5%;
+  left: 0%;
+  width: 100%;
 }
 @media (width >= 768px) {
-  .c-contents.-f-view .c-contentsBox.-f-title {
-    top: 27%;
-    width: 45%;
+  .c-contents.-f-view .c-contentsBox.-f-bg.-bg01 {
+    top: 0%;
+    left: 0%;
+    width: 39.3%;
   }
 }
-@media (width >= 1400px) {
-  .c-contents.-f-view .c-contentsBox.-f-title {
-    top: 27%;
-    width: 50%;
+.c-contents.-f-view .c-contentsBox.-f-bg.-bg02 {
+  top: 0%;
+  left: 0%;
+  width: 67.1%;
+}
+@media (width >= 768px) {
+  .c-contents.-f-view .c-contentsBox.-f-bg.-bg02 {
+    top: 0%;
+    left: 39.3%;
+    width: 42.5%;
   }
+}
+.c-contents.-f-view .c-contentsBox.-f-bg.-bg03 {
+  top: 0%;
+  left: auto;
+  right: 0%;
+  width: 33.4%;
+}
+@media (width >= 768px) {
+  .c-contents.-f-view .c-contentsBox.-f-bg.-bg03 {
+    top: 0%;
+    left: 81.8%;
+    right: auto;
+    width: 18.2%;
+  }
+}
+.c-contents.-f-view .c-contentsBox.-f-bg.-bg04 {
+  top: auto;
+  left: 0%;
+  bottom: 0%;
+  width: 100%;
+}
+@media (width >= 768px) {
+  .c-contents.-f-view .c-contentsBox.-f-bg.-bg04 {
+    top: 50%;
+    left: 0%;
+    bottom: auto;
+    width: 39.3%;
+  }
+}
+.c-contents.-f-view .c-contentsBox.-f-bg.-bg05 {
+  top: 24.2%;
+  left: 0%;
+  width: 33.3%;
+}
+@media (width >= 768px) {
+  .c-contents.-f-view .c-contentsBox.-f-bg.-bg05 {
+    top: 50%;
+    left: 39.3%;
+    width: 21.3%;
+  }
+}
+.c-contents.-f-view .c-contentsBox.-f-bg.-bg06 {
+  top: 24.2%;
+  left: 33.25%;
+  width: 33.3%;
+}
+@media (width >= 768px) {
+  .c-contents.-f-view .c-contentsBox.-f-bg.-bg06 {
+    top: 50%;
+    left: 60.5%;
+    width: 21.3%;
+  }
+}
+.c-contents.-f-view .c-contentsBox.-f-cover {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  z-index: 2;
 }
 .c-contents.-f-view .c-contentsBox.-f-subTitle {
   top: 52%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 60%;
+  width: 90%;
+  z-index: 3;
 }
 @media (width >= 768px) {
   .c-contents.-f-view .c-contentsBox.-f-subTitle {
     top: 48%;
-    width: 20%;
+    width: 35%;
   }
 }
 @media (width >= 1400px) {
   .c-contents.-f-view .c-contentsBox.-f-subTitle {
     top: 48%;
-    width: 20%;
+    width: 38%;
   }
 }
 @media (768px >= width) {
@@ -6761,6 +6782,126 @@ a {
       各アニメーション_オプション関係
   --------------------------------------- */
 }
+.a-bg-color.-tm05, .a-text-color.-tm05, .a-rotate-bg.-tm05, .a-fade.-tm05, .a-fadeUp.-tm05, .a-fadeDown.-tm05, .a-fadeLeft.-tm05, .a-fadeRight.-tm05, .a-flipDown.-tm05, .a-flipLeft.-tm05, .a-flipRight.-tm05, .a-moveUp.-tm05, .a-moveDown.-tm05, .a-scOutImg.-tm05, .a-bird_r.-tm05, .a-bird_l01.-tm05, .a-bird_l02.-tm05, .a-purupuru.-tm05 {
+  animation-delay: 0.5s;
+}
+.a-bg-color.-tm05::after, .a-bg-color.-tm05 img, .a-text-color.-tm05::after, .a-text-color.-tm05 img, .a-rotate-bg.-tm05::after, .a-rotate-bg.-tm05 img, .a-fade.-tm05::after, .a-fade.-tm05 img, .a-fadeUp.-tm05::after, .a-fadeUp.-tm05 img, .a-fadeDown.-tm05::after, .a-fadeDown.-tm05 img, .a-fadeLeft.-tm05::after, .a-fadeLeft.-tm05 img, .a-fadeRight.-tm05::after, .a-fadeRight.-tm05 img, .a-flipDown.-tm05::after, .a-flipDown.-tm05 img, .a-flipLeft.-tm05::after, .a-flipLeft.-tm05 img, .a-flipRight.-tm05::after, .a-flipRight.-tm05 img, .a-moveUp.-tm05::after, .a-moveUp.-tm05 img, .a-moveDown.-tm05::after, .a-moveDown.-tm05 img, .a-scOutImg.-tm05::after, .a-scOutImg.-tm05 img, .a-bird_r.-tm05::after, .a-bird_r.-tm05 img, .a-bird_l01.-tm05::after, .a-bird_l01.-tm05 img, .a-bird_l02.-tm05::after, .a-bird_l02.-tm05 img, .a-purupuru.-tm05::after, .a-purupuru.-tm05 img {
+  animation-delay: 0.5s;
+}
+.a-bg-color.-tm1, .a-text-color.-tm1, .a-rotate-bg.-tm1, .a-fade.-tm1, .a-fadeUp.-tm1, .a-fadeDown.-tm1, .a-fadeLeft.-tm1, .a-fadeRight.-tm1, .a-flipDown.-tm1, .a-flipLeft.-tm1, .a-flipRight.-tm1, .a-moveUp.-tm1, .a-moveDown.-tm1, .a-scOutImg.-tm1, .a-bird_r.-tm1, .a-bird_l01.-tm1, .a-bird_l02.-tm1, .a-purupuru.-tm1 {
+  animation-delay: 1s;
+}
+.a-bg-color.-tm1::after, .a-bg-color.-tm1 img, .a-text-color.-tm1::after, .a-text-color.-tm1 img, .a-rotate-bg.-tm1::after, .a-rotate-bg.-tm1 img, .a-fade.-tm1::after, .a-fade.-tm1 img, .a-fadeUp.-tm1::after, .a-fadeUp.-tm1 img, .a-fadeDown.-tm1::after, .a-fadeDown.-tm1 img, .a-fadeLeft.-tm1::after, .a-fadeLeft.-tm1 img, .a-fadeRight.-tm1::after, .a-fadeRight.-tm1 img, .a-flipDown.-tm1::after, .a-flipDown.-tm1 img, .a-flipLeft.-tm1::after, .a-flipLeft.-tm1 img, .a-flipRight.-tm1::after, .a-flipRight.-tm1 img, .a-moveUp.-tm1::after, .a-moveUp.-tm1 img, .a-moveDown.-tm1::after, .a-moveDown.-tm1 img, .a-scOutImg.-tm1::after, .a-scOutImg.-tm1 img, .a-bird_r.-tm1::after, .a-bird_r.-tm1 img, .a-bird_l01.-tm1::after, .a-bird_l01.-tm1 img, .a-bird_l02.-tm1::after, .a-bird_l02.-tm1 img, .a-purupuru.-tm1::after, .a-purupuru.-tm1 img {
+  animation-delay: 1s;
+}
+.a-bg-color.-tm15, .a-text-color.-tm15, .a-rotate-bg.-tm15, .a-fade.-tm15, .a-fadeUp.-tm15, .a-fadeDown.-tm15, .a-fadeLeft.-tm15, .a-fadeRight.-tm15, .a-flipDown.-tm15, .a-flipLeft.-tm15, .a-flipRight.-tm15, .a-moveUp.-tm15, .a-moveDown.-tm15, .a-scOutImg.-tm15, .a-bird_r.-tm15, .a-bird_l01.-tm15, .a-bird_l02.-tm15, .a-purupuru.-tm15 {
+  animation-delay: 1.5s;
+}
+.a-bg-color.-tm15::after, .a-bg-color.-tm15 img, .a-text-color.-tm15::after, .a-text-color.-tm15 img, .a-rotate-bg.-tm15::after, .a-rotate-bg.-tm15 img, .a-fade.-tm15::after, .a-fade.-tm15 img, .a-fadeUp.-tm15::after, .a-fadeUp.-tm15 img, .a-fadeDown.-tm15::after, .a-fadeDown.-tm15 img, .a-fadeLeft.-tm15::after, .a-fadeLeft.-tm15 img, .a-fadeRight.-tm15::after, .a-fadeRight.-tm15 img, .a-flipDown.-tm15::after, .a-flipDown.-tm15 img, .a-flipLeft.-tm15::after, .a-flipLeft.-tm15 img, .a-flipRight.-tm15::after, .a-flipRight.-tm15 img, .a-moveUp.-tm15::after, .a-moveUp.-tm15 img, .a-moveDown.-tm15::after, .a-moveDown.-tm15 img, .a-scOutImg.-tm15::after, .a-scOutImg.-tm15 img, .a-bird_r.-tm15::after, .a-bird_r.-tm15 img, .a-bird_l01.-tm15::after, .a-bird_l01.-tm15 img, .a-bird_l02.-tm15::after, .a-bird_l02.-tm15 img, .a-purupuru.-tm15::after, .a-purupuru.-tm15 img {
+  animation-delay: 1.5s;
+}
+.a-bg-color.-tm2, .a-text-color.-tm2, .a-rotate-bg.-tm2, .a-fade.-tm2, .a-fadeUp.-tm2, .a-fadeDown.-tm2, .a-fadeLeft.-tm2, .a-fadeRight.-tm2, .a-flipDown.-tm2, .a-flipLeft.-tm2, .a-flipRight.-tm2, .a-moveUp.-tm2, .a-moveDown.-tm2, .a-scOutImg.-tm2, .a-bird_r.-tm2, .a-bird_l01.-tm2, .a-bird_l02.-tm2, .a-purupuru.-tm2 {
+  animation-delay: 2s;
+}
+.a-bg-color.-tm2::after, .a-bg-color.-tm2 img, .a-text-color.-tm2::after, .a-text-color.-tm2 img, .a-rotate-bg.-tm2::after, .a-rotate-bg.-tm2 img, .a-fade.-tm2::after, .a-fade.-tm2 img, .a-fadeUp.-tm2::after, .a-fadeUp.-tm2 img, .a-fadeDown.-tm2::after, .a-fadeDown.-tm2 img, .a-fadeLeft.-tm2::after, .a-fadeLeft.-tm2 img, .a-fadeRight.-tm2::after, .a-fadeRight.-tm2 img, .a-flipDown.-tm2::after, .a-flipDown.-tm2 img, .a-flipLeft.-tm2::after, .a-flipLeft.-tm2 img, .a-flipRight.-tm2::after, .a-flipRight.-tm2 img, .a-moveUp.-tm2::after, .a-moveUp.-tm2 img, .a-moveDown.-tm2::after, .a-moveDown.-tm2 img, .a-scOutImg.-tm2::after, .a-scOutImg.-tm2 img, .a-bird_r.-tm2::after, .a-bird_r.-tm2 img, .a-bird_l01.-tm2::after, .a-bird_l01.-tm2 img, .a-bird_l02.-tm2::after, .a-bird_l02.-tm2 img, .a-purupuru.-tm2::after, .a-purupuru.-tm2 img {
+  animation-delay: 2s;
+}
+.a-bg-color.-tm25, .a-text-color.-tm25, .a-rotate-bg.-tm25, .a-fade.-tm25, .a-fadeUp.-tm25, .a-fadeDown.-tm25, .a-fadeLeft.-tm25, .a-fadeRight.-tm25, .a-flipDown.-tm25, .a-flipLeft.-tm25, .a-flipRight.-tm25, .a-moveUp.-tm25, .a-moveDown.-tm25, .a-scOutImg.-tm25, .a-bird_r.-tm25, .a-bird_l01.-tm25, .a-bird_l02.-tm25, .a-purupuru.-tm25 {
+  animation-delay: 2.5s;
+}
+.a-bg-color.-tm25::after, .a-bg-color.-tm25 img, .a-text-color.-tm25::after, .a-text-color.-tm25 img, .a-rotate-bg.-tm25::after, .a-rotate-bg.-tm25 img, .a-fade.-tm25::after, .a-fade.-tm25 img, .a-fadeUp.-tm25::after, .a-fadeUp.-tm25 img, .a-fadeDown.-tm25::after, .a-fadeDown.-tm25 img, .a-fadeLeft.-tm25::after, .a-fadeLeft.-tm25 img, .a-fadeRight.-tm25::after, .a-fadeRight.-tm25 img, .a-flipDown.-tm25::after, .a-flipDown.-tm25 img, .a-flipLeft.-tm25::after, .a-flipLeft.-tm25 img, .a-flipRight.-tm25::after, .a-flipRight.-tm25 img, .a-moveUp.-tm25::after, .a-moveUp.-tm25 img, .a-moveDown.-tm25::after, .a-moveDown.-tm25 img, .a-scOutImg.-tm25::after, .a-scOutImg.-tm25 img, .a-bird_r.-tm25::after, .a-bird_r.-tm25 img, .a-bird_l01.-tm25::after, .a-bird_l01.-tm25 img, .a-bird_l02.-tm25::after, .a-bird_l02.-tm25 img, .a-purupuru.-tm25::after, .a-purupuru.-tm25 img {
+  animation-delay: 2.5s;
+}
+.a-bg-color.-tm3, .a-text-color.-tm3, .a-rotate-bg.-tm3, .a-fade.-tm3, .a-fadeUp.-tm3, .a-fadeDown.-tm3, .a-fadeLeft.-tm3, .a-fadeRight.-tm3, .a-flipDown.-tm3, .a-flipLeft.-tm3, .a-flipRight.-tm3, .a-moveUp.-tm3, .a-moveDown.-tm3, .a-scOutImg.-tm3, .a-bird_r.-tm3, .a-bird_l01.-tm3, .a-bird_l02.-tm3, .a-purupuru.-tm3 {
+  animation-delay: 3s;
+}
+.a-bg-color.-tm3::after, .a-bg-color.-tm3 img, .a-text-color.-tm3::after, .a-text-color.-tm3 img, .a-rotate-bg.-tm3::after, .a-rotate-bg.-tm3 img, .a-fade.-tm3::after, .a-fade.-tm3 img, .a-fadeUp.-tm3::after, .a-fadeUp.-tm3 img, .a-fadeDown.-tm3::after, .a-fadeDown.-tm3 img, .a-fadeLeft.-tm3::after, .a-fadeLeft.-tm3 img, .a-fadeRight.-tm3::after, .a-fadeRight.-tm3 img, .a-flipDown.-tm3::after, .a-flipDown.-tm3 img, .a-flipLeft.-tm3::after, .a-flipLeft.-tm3 img, .a-flipRight.-tm3::after, .a-flipRight.-tm3 img, .a-moveUp.-tm3::after, .a-moveUp.-tm3 img, .a-moveDown.-tm3::after, .a-moveDown.-tm3 img, .a-scOutImg.-tm3::after, .a-scOutImg.-tm3 img, .a-bird_r.-tm3::after, .a-bird_r.-tm3 img, .a-bird_l01.-tm3::after, .a-bird_l01.-tm3 img, .a-bird_l02.-tm3::after, .a-bird_l02.-tm3 img, .a-purupuru.-tm3::after, .a-purupuru.-tm3 img {
+  animation-delay: 3s;
+}
+.a-bg-color.-tm35, .a-text-color.-tm35, .a-rotate-bg.-tm35, .a-fade.-tm35, .a-fadeUp.-tm35, .a-fadeDown.-tm35, .a-fadeLeft.-tm35, .a-fadeRight.-tm35, .a-flipDown.-tm35, .a-flipLeft.-tm35, .a-flipRight.-tm35, .a-moveUp.-tm35, .a-moveDown.-tm35, .a-scOutImg.-tm35, .a-bird_r.-tm35, .a-bird_l01.-tm35, .a-bird_l02.-tm35, .a-purupuru.-tm35 {
+  animation-delay: 3.5s;
+}
+.a-bg-color.-tm35::after, .a-bg-color.-tm35 img, .a-text-color.-tm35::after, .a-text-color.-tm35 img, .a-rotate-bg.-tm35::after, .a-rotate-bg.-tm35 img, .a-fade.-tm35::after, .a-fade.-tm35 img, .a-fadeUp.-tm35::after, .a-fadeUp.-tm35 img, .a-fadeDown.-tm35::after, .a-fadeDown.-tm35 img, .a-fadeLeft.-tm35::after, .a-fadeLeft.-tm35 img, .a-fadeRight.-tm35::after, .a-fadeRight.-tm35 img, .a-flipDown.-tm35::after, .a-flipDown.-tm35 img, .a-flipLeft.-tm35::after, .a-flipLeft.-tm35 img, .a-flipRight.-tm35::after, .a-flipRight.-tm35 img, .a-moveUp.-tm35::after, .a-moveUp.-tm35 img, .a-moveDown.-tm35::after, .a-moveDown.-tm35 img, .a-scOutImg.-tm35::after, .a-scOutImg.-tm35 img, .a-bird_r.-tm35::after, .a-bird_r.-tm35 img, .a-bird_l01.-tm35::after, .a-bird_l01.-tm35 img, .a-bird_l02.-tm35::after, .a-bird_l02.-tm35 img, .a-purupuru.-tm35::after, .a-purupuru.-tm35 img {
+  animation-delay: 3.5s;
+}
+.a-bg-color.-tm4, .a-text-color.-tm4, .a-rotate-bg.-tm4, .a-fade.-tm4, .a-fadeUp.-tm4, .a-fadeDown.-tm4, .a-fadeLeft.-tm4, .a-fadeRight.-tm4, .a-flipDown.-tm4, .a-flipLeft.-tm4, .a-flipRight.-tm4, .a-moveUp.-tm4, .a-moveDown.-tm4, .a-scOutImg.-tm4, .a-bird_r.-tm4, .a-bird_l01.-tm4, .a-bird_l02.-tm4, .a-purupuru.-tm4 {
+  animation-delay: 4s;
+}
+.a-bg-color.-tm4::after, .a-bg-color.-tm4 img, .a-text-color.-tm4::after, .a-text-color.-tm4 img, .a-rotate-bg.-tm4::after, .a-rotate-bg.-tm4 img, .a-fade.-tm4::after, .a-fade.-tm4 img, .a-fadeUp.-tm4::after, .a-fadeUp.-tm4 img, .a-fadeDown.-tm4::after, .a-fadeDown.-tm4 img, .a-fadeLeft.-tm4::after, .a-fadeLeft.-tm4 img, .a-fadeRight.-tm4::after, .a-fadeRight.-tm4 img, .a-flipDown.-tm4::after, .a-flipDown.-tm4 img, .a-flipLeft.-tm4::after, .a-flipLeft.-tm4 img, .a-flipRight.-tm4::after, .a-flipRight.-tm4 img, .a-moveUp.-tm4::after, .a-moveUp.-tm4 img, .a-moveDown.-tm4::after, .a-moveDown.-tm4 img, .a-scOutImg.-tm4::after, .a-scOutImg.-tm4 img, .a-bird_r.-tm4::after, .a-bird_r.-tm4 img, .a-bird_l01.-tm4::after, .a-bird_l01.-tm4 img, .a-bird_l02.-tm4::after, .a-bird_l02.-tm4 img, .a-purupuru.-tm4::after, .a-purupuru.-tm4 img {
+  animation-delay: 4s;
+}
+.a-bg-color.-tm45, .a-text-color.-tm45, .a-rotate-bg.-tm45, .a-fade.-tm45, .a-fadeUp.-tm45, .a-fadeDown.-tm45, .a-fadeLeft.-tm45, .a-fadeRight.-tm45, .a-flipDown.-tm45, .a-flipLeft.-tm45, .a-flipRight.-tm45, .a-moveUp.-tm45, .a-moveDown.-tm45, .a-scOutImg.-tm45, .a-bird_r.-tm45, .a-bird_l01.-tm45, .a-bird_l02.-tm45, .a-purupuru.-tm45 {
+  animation-delay: 4.5s;
+}
+.a-bg-color.-tm45::after, .a-bg-color.-tm45 img, .a-text-color.-tm45::after, .a-text-color.-tm45 img, .a-rotate-bg.-tm45::after, .a-rotate-bg.-tm45 img, .a-fade.-tm45::after, .a-fade.-tm45 img, .a-fadeUp.-tm45::after, .a-fadeUp.-tm45 img, .a-fadeDown.-tm45::after, .a-fadeDown.-tm45 img, .a-fadeLeft.-tm45::after, .a-fadeLeft.-tm45 img, .a-fadeRight.-tm45::after, .a-fadeRight.-tm45 img, .a-flipDown.-tm45::after, .a-flipDown.-tm45 img, .a-flipLeft.-tm45::after, .a-flipLeft.-tm45 img, .a-flipRight.-tm45::after, .a-flipRight.-tm45 img, .a-moveUp.-tm45::after, .a-moveUp.-tm45 img, .a-moveDown.-tm45::after, .a-moveDown.-tm45 img, .a-scOutImg.-tm45::after, .a-scOutImg.-tm45 img, .a-bird_r.-tm45::after, .a-bird_r.-tm45 img, .a-bird_l01.-tm45::after, .a-bird_l01.-tm45 img, .a-bird_l02.-tm45::after, .a-bird_l02.-tm45 img, .a-purupuru.-tm45::after, .a-purupuru.-tm45 img {
+  animation-delay: 4.5s;
+}
+.a-bg-color.-tm5, .a-text-color.-tm5, .a-rotate-bg.-tm5, .a-fade.-tm5, .a-fadeUp.-tm5, .a-fadeDown.-tm5, .a-fadeLeft.-tm5, .a-fadeRight.-tm5, .a-flipDown.-tm5, .a-flipLeft.-tm5, .a-flipRight.-tm5, .a-moveUp.-tm5, .a-moveDown.-tm5, .a-scOutImg.-tm5, .a-bird_r.-tm5, .a-bird_l01.-tm5, .a-bird_l02.-tm5, .a-purupuru.-tm5 {
+  animation-delay: 5s;
+}
+.a-bg-color.-tm5::after, .a-bg-color.-tm5 img, .a-text-color.-tm5::after, .a-text-color.-tm5 img, .a-rotate-bg.-tm5::after, .a-rotate-bg.-tm5 img, .a-fade.-tm5::after, .a-fade.-tm5 img, .a-fadeUp.-tm5::after, .a-fadeUp.-tm5 img, .a-fadeDown.-tm5::after, .a-fadeDown.-tm5 img, .a-fadeLeft.-tm5::after, .a-fadeLeft.-tm5 img, .a-fadeRight.-tm5::after, .a-fadeRight.-tm5 img, .a-flipDown.-tm5::after, .a-flipDown.-tm5 img, .a-flipLeft.-tm5::after, .a-flipLeft.-tm5 img, .a-flipRight.-tm5::after, .a-flipRight.-tm5 img, .a-moveUp.-tm5::after, .a-moveUp.-tm5 img, .a-moveDown.-tm5::after, .a-moveDown.-tm5 img, .a-scOutImg.-tm5::after, .a-scOutImg.-tm5 img, .a-bird_r.-tm5::after, .a-bird_r.-tm5 img, .a-bird_l01.-tm5::after, .a-bird_l01.-tm5 img, .a-bird_l02.-tm5::after, .a-bird_l02.-tm5 img, .a-purupuru.-tm5::after, .a-purupuru.-tm5 img {
+  animation-delay: 5s;
+}
+.a-bg-color.-tm55, .a-text-color.-tm55, .a-rotate-bg.-tm55, .a-fade.-tm55, .a-fadeUp.-tm55, .a-fadeDown.-tm55, .a-fadeLeft.-tm55, .a-fadeRight.-tm55, .a-flipDown.-tm55, .a-flipLeft.-tm55, .a-flipRight.-tm55, .a-moveUp.-tm55, .a-moveDown.-tm55, .a-scOutImg.-tm55, .a-bird_r.-tm55, .a-bird_l01.-tm55, .a-bird_l02.-tm55, .a-purupuru.-tm55 {
+  animation-delay: 5.5s;
+}
+.a-bg-color.-tm55::after, .a-bg-color.-tm55 img, .a-text-color.-tm55::after, .a-text-color.-tm55 img, .a-rotate-bg.-tm55::after, .a-rotate-bg.-tm55 img, .a-fade.-tm55::after, .a-fade.-tm55 img, .a-fadeUp.-tm55::after, .a-fadeUp.-tm55 img, .a-fadeDown.-tm55::after, .a-fadeDown.-tm55 img, .a-fadeLeft.-tm55::after, .a-fadeLeft.-tm55 img, .a-fadeRight.-tm55::after, .a-fadeRight.-tm55 img, .a-flipDown.-tm55::after, .a-flipDown.-tm55 img, .a-flipLeft.-tm55::after, .a-flipLeft.-tm55 img, .a-flipRight.-tm55::after, .a-flipRight.-tm55 img, .a-moveUp.-tm55::after, .a-moveUp.-tm55 img, .a-moveDown.-tm55::after, .a-moveDown.-tm55 img, .a-scOutImg.-tm55::after, .a-scOutImg.-tm55 img, .a-bird_r.-tm55::after, .a-bird_r.-tm55 img, .a-bird_l01.-tm55::after, .a-bird_l01.-tm55 img, .a-bird_l02.-tm55::after, .a-bird_l02.-tm55 img, .a-purupuru.-tm55::after, .a-purupuru.-tm55 img {
+  animation-delay: 5.5s;
+}
+.a-bg-color.-tm6, .a-text-color.-tm6, .a-rotate-bg.-tm6, .a-fade.-tm6, .a-fadeUp.-tm6, .a-fadeDown.-tm6, .a-fadeLeft.-tm6, .a-fadeRight.-tm6, .a-flipDown.-tm6, .a-flipLeft.-tm6, .a-flipRight.-tm6, .a-moveUp.-tm6, .a-moveDown.-tm6, .a-scOutImg.-tm6, .a-bird_r.-tm6, .a-bird_l01.-tm6, .a-bird_l02.-tm6, .a-purupuru.-tm6 {
+  animation-delay: 6s;
+}
+.a-bg-color.-tm6::after, .a-bg-color.-tm6 img, .a-text-color.-tm6::after, .a-text-color.-tm6 img, .a-rotate-bg.-tm6::after, .a-rotate-bg.-tm6 img, .a-fade.-tm6::after, .a-fade.-tm6 img, .a-fadeUp.-tm6::after, .a-fadeUp.-tm6 img, .a-fadeDown.-tm6::after, .a-fadeDown.-tm6 img, .a-fadeLeft.-tm6::after, .a-fadeLeft.-tm6 img, .a-fadeRight.-tm6::after, .a-fadeRight.-tm6 img, .a-flipDown.-tm6::after, .a-flipDown.-tm6 img, .a-flipLeft.-tm6::after, .a-flipLeft.-tm6 img, .a-flipRight.-tm6::after, .a-flipRight.-tm6 img, .a-moveUp.-tm6::after, .a-moveUp.-tm6 img, .a-moveDown.-tm6::after, .a-moveDown.-tm6 img, .a-scOutImg.-tm6::after, .a-scOutImg.-tm6 img, .a-bird_r.-tm6::after, .a-bird_r.-tm6 img, .a-bird_l01.-tm6::after, .a-bird_l01.-tm6 img, .a-bird_l02.-tm6::after, .a-bird_l02.-tm6 img, .a-purupuru.-tm6::after, .a-purupuru.-tm6 img {
+  animation-delay: 6s;
+}
+.a-bg-color.-tm65, .a-text-color.-tm65, .a-rotate-bg.-tm65, .a-fade.-tm65, .a-fadeUp.-tm65, .a-fadeDown.-tm65, .a-fadeLeft.-tm65, .a-fadeRight.-tm65, .a-flipDown.-tm65, .a-flipLeft.-tm65, .a-flipRight.-tm65, .a-moveUp.-tm65, .a-moveDown.-tm65, .a-scOutImg.-tm65, .a-bird_r.-tm65, .a-bird_l01.-tm65, .a-bird_l02.-tm65, .a-purupuru.-tm65 {
+  animation-delay: 6.5s;
+}
+.a-bg-color.-tm65::after, .a-bg-color.-tm65 img, .a-text-color.-tm65::after, .a-text-color.-tm65 img, .a-rotate-bg.-tm65::after, .a-rotate-bg.-tm65 img, .a-fade.-tm65::after, .a-fade.-tm65 img, .a-fadeUp.-tm65::after, .a-fadeUp.-tm65 img, .a-fadeDown.-tm65::after, .a-fadeDown.-tm65 img, .a-fadeLeft.-tm65::after, .a-fadeLeft.-tm65 img, .a-fadeRight.-tm65::after, .a-fadeRight.-tm65 img, .a-flipDown.-tm65::after, .a-flipDown.-tm65 img, .a-flipLeft.-tm65::after, .a-flipLeft.-tm65 img, .a-flipRight.-tm65::after, .a-flipRight.-tm65 img, .a-moveUp.-tm65::after, .a-moveUp.-tm65 img, .a-moveDown.-tm65::after, .a-moveDown.-tm65 img, .a-scOutImg.-tm65::after, .a-scOutImg.-tm65 img, .a-bird_r.-tm65::after, .a-bird_r.-tm65 img, .a-bird_l01.-tm65::after, .a-bird_l01.-tm65 img, .a-bird_l02.-tm65::after, .a-bird_l02.-tm65 img, .a-purupuru.-tm65::after, .a-purupuru.-tm65 img {
+  animation-delay: 6.5s;
+}
+.a-bg-color.-tm7, .a-text-color.-tm7, .a-rotate-bg.-tm7, .a-fade.-tm7, .a-fadeUp.-tm7, .a-fadeDown.-tm7, .a-fadeLeft.-tm7, .a-fadeRight.-tm7, .a-flipDown.-tm7, .a-flipLeft.-tm7, .a-flipRight.-tm7, .a-moveUp.-tm7, .a-moveDown.-tm7, .a-scOutImg.-tm7, .a-bird_r.-tm7, .a-bird_l01.-tm7, .a-bird_l02.-tm7, .a-purupuru.-tm7 {
+  animation-delay: 7s;
+}
+.a-bg-color.-tm7::after, .a-bg-color.-tm7 img, .a-text-color.-tm7::after, .a-text-color.-tm7 img, .a-rotate-bg.-tm7::after, .a-rotate-bg.-tm7 img, .a-fade.-tm7::after, .a-fade.-tm7 img, .a-fadeUp.-tm7::after, .a-fadeUp.-tm7 img, .a-fadeDown.-tm7::after, .a-fadeDown.-tm7 img, .a-fadeLeft.-tm7::after, .a-fadeLeft.-tm7 img, .a-fadeRight.-tm7::after, .a-fadeRight.-tm7 img, .a-flipDown.-tm7::after, .a-flipDown.-tm7 img, .a-flipLeft.-tm7::after, .a-flipLeft.-tm7 img, .a-flipRight.-tm7::after, .a-flipRight.-tm7 img, .a-moveUp.-tm7::after, .a-moveUp.-tm7 img, .a-moveDown.-tm7::after, .a-moveDown.-tm7 img, .a-scOutImg.-tm7::after, .a-scOutImg.-tm7 img, .a-bird_r.-tm7::after, .a-bird_r.-tm7 img, .a-bird_l01.-tm7::after, .a-bird_l01.-tm7 img, .a-bird_l02.-tm7::after, .a-bird_l02.-tm7 img, .a-purupuru.-tm7::after, .a-purupuru.-tm7 img {
+  animation-delay: 7s;
+}
+.a-bg-color.-tm75, .a-text-color.-tm75, .a-rotate-bg.-tm75, .a-fade.-tm75, .a-fadeUp.-tm75, .a-fadeDown.-tm75, .a-fadeLeft.-tm75, .a-fadeRight.-tm75, .a-flipDown.-tm75, .a-flipLeft.-tm75, .a-flipRight.-tm75, .a-moveUp.-tm75, .a-moveDown.-tm75, .a-scOutImg.-tm75, .a-bird_r.-tm75, .a-bird_l01.-tm75, .a-bird_l02.-tm75, .a-purupuru.-tm75 {
+  animation-delay: 7.5s;
+}
+.a-bg-color.-tm75::after, .a-bg-color.-tm75 img, .a-text-color.-tm75::after, .a-text-color.-tm75 img, .a-rotate-bg.-tm75::after, .a-rotate-bg.-tm75 img, .a-fade.-tm75::after, .a-fade.-tm75 img, .a-fadeUp.-tm75::after, .a-fadeUp.-tm75 img, .a-fadeDown.-tm75::after, .a-fadeDown.-tm75 img, .a-fadeLeft.-tm75::after, .a-fadeLeft.-tm75 img, .a-fadeRight.-tm75::after, .a-fadeRight.-tm75 img, .a-flipDown.-tm75::after, .a-flipDown.-tm75 img, .a-flipLeft.-tm75::after, .a-flipLeft.-tm75 img, .a-flipRight.-tm75::after, .a-flipRight.-tm75 img, .a-moveUp.-tm75::after, .a-moveUp.-tm75 img, .a-moveDown.-tm75::after, .a-moveDown.-tm75 img, .a-scOutImg.-tm75::after, .a-scOutImg.-tm75 img, .a-bird_r.-tm75::after, .a-bird_r.-tm75 img, .a-bird_l01.-tm75::after, .a-bird_l01.-tm75 img, .a-bird_l02.-tm75::after, .a-bird_l02.-tm75 img, .a-purupuru.-tm75::after, .a-purupuru.-tm75 img {
+  animation-delay: 7.5s;
+}
+.a-bg-color.-tm8, .a-text-color.-tm8, .a-rotate-bg.-tm8, .a-fade.-tm8, .a-fadeUp.-tm8, .a-fadeDown.-tm8, .a-fadeLeft.-tm8, .a-fadeRight.-tm8, .a-flipDown.-tm8, .a-flipLeft.-tm8, .a-flipRight.-tm8, .a-moveUp.-tm8, .a-moveDown.-tm8, .a-scOutImg.-tm8, .a-bird_r.-tm8, .a-bird_l01.-tm8, .a-bird_l02.-tm8, .a-purupuru.-tm8 {
+  animation-delay: 8s;
+}
+.a-bg-color.-tm8::after, .a-bg-color.-tm8 img, .a-text-color.-tm8::after, .a-text-color.-tm8 img, .a-rotate-bg.-tm8::after, .a-rotate-bg.-tm8 img, .a-fade.-tm8::after, .a-fade.-tm8 img, .a-fadeUp.-tm8::after, .a-fadeUp.-tm8 img, .a-fadeDown.-tm8::after, .a-fadeDown.-tm8 img, .a-fadeLeft.-tm8::after, .a-fadeLeft.-tm8 img, .a-fadeRight.-tm8::after, .a-fadeRight.-tm8 img, .a-flipDown.-tm8::after, .a-flipDown.-tm8 img, .a-flipLeft.-tm8::after, .a-flipLeft.-tm8 img, .a-flipRight.-tm8::after, .a-flipRight.-tm8 img, .a-moveUp.-tm8::after, .a-moveUp.-tm8 img, .a-moveDown.-tm8::after, .a-moveDown.-tm8 img, .a-scOutImg.-tm8::after, .a-scOutImg.-tm8 img, .a-bird_r.-tm8::after, .a-bird_r.-tm8 img, .a-bird_l01.-tm8::after, .a-bird_l01.-tm8 img, .a-bird_l02.-tm8::after, .a-bird_l02.-tm8 img, .a-purupuru.-tm8::after, .a-purupuru.-tm8 img {
+  animation-delay: 8s;
+}
+.a-bg-color.-tm85, .a-text-color.-tm85, .a-rotate-bg.-tm85, .a-fade.-tm85, .a-fadeUp.-tm85, .a-fadeDown.-tm85, .a-fadeLeft.-tm85, .a-fadeRight.-tm85, .a-flipDown.-tm85, .a-flipLeft.-tm85, .a-flipRight.-tm85, .a-moveUp.-tm85, .a-moveDown.-tm85, .a-scOutImg.-tm85, .a-bird_r.-tm85, .a-bird_l01.-tm85, .a-bird_l02.-tm85, .a-purupuru.-tm85 {
+  animation-delay: 8.5s;
+}
+.a-bg-color.-tm85::after, .a-bg-color.-tm85 img, .a-text-color.-tm85::after, .a-text-color.-tm85 img, .a-rotate-bg.-tm85::after, .a-rotate-bg.-tm85 img, .a-fade.-tm85::after, .a-fade.-tm85 img, .a-fadeUp.-tm85::after, .a-fadeUp.-tm85 img, .a-fadeDown.-tm85::after, .a-fadeDown.-tm85 img, .a-fadeLeft.-tm85::after, .a-fadeLeft.-tm85 img, .a-fadeRight.-tm85::after, .a-fadeRight.-tm85 img, .a-flipDown.-tm85::after, .a-flipDown.-tm85 img, .a-flipLeft.-tm85::after, .a-flipLeft.-tm85 img, .a-flipRight.-tm85::after, .a-flipRight.-tm85 img, .a-moveUp.-tm85::after, .a-moveUp.-tm85 img, .a-moveDown.-tm85::after, .a-moveDown.-tm85 img, .a-scOutImg.-tm85::after, .a-scOutImg.-tm85 img, .a-bird_r.-tm85::after, .a-bird_r.-tm85 img, .a-bird_l01.-tm85::after, .a-bird_l01.-tm85 img, .a-bird_l02.-tm85::after, .a-bird_l02.-tm85 img, .a-purupuru.-tm85::after, .a-purupuru.-tm85 img {
+  animation-delay: 8.5s;
+}
+.a-bg-color.-tm9, .a-text-color.-tm9, .a-rotate-bg.-tm9, .a-fade.-tm9, .a-fadeUp.-tm9, .a-fadeDown.-tm9, .a-fadeLeft.-tm9, .a-fadeRight.-tm9, .a-flipDown.-tm9, .a-flipLeft.-tm9, .a-flipRight.-tm9, .a-moveUp.-tm9, .a-moveDown.-tm9, .a-scOutImg.-tm9, .a-bird_r.-tm9, .a-bird_l01.-tm9, .a-bird_l02.-tm9, .a-purupuru.-tm9 {
+  animation-delay: 9s;
+}
+.a-bg-color.-tm9::after, .a-bg-color.-tm9 img, .a-text-color.-tm9::after, .a-text-color.-tm9 img, .a-rotate-bg.-tm9::after, .a-rotate-bg.-tm9 img, .a-fade.-tm9::after, .a-fade.-tm9 img, .a-fadeUp.-tm9::after, .a-fadeUp.-tm9 img, .a-fadeDown.-tm9::after, .a-fadeDown.-tm9 img, .a-fadeLeft.-tm9::after, .a-fadeLeft.-tm9 img, .a-fadeRight.-tm9::after, .a-fadeRight.-tm9 img, .a-flipDown.-tm9::after, .a-flipDown.-tm9 img, .a-flipLeft.-tm9::after, .a-flipLeft.-tm9 img, .a-flipRight.-tm9::after, .a-flipRight.-tm9 img, .a-moveUp.-tm9::after, .a-moveUp.-tm9 img, .a-moveDown.-tm9::after, .a-moveDown.-tm9 img, .a-scOutImg.-tm9::after, .a-scOutImg.-tm9 img, .a-bird_r.-tm9::after, .a-bird_r.-tm9 img, .a-bird_l01.-tm9::after, .a-bird_l01.-tm9 img, .a-bird_l02.-tm9::after, .a-bird_l02.-tm9 img, .a-purupuru.-tm9::after, .a-purupuru.-tm9 img {
+  animation-delay: 9s;
+}
+.a-bg-color.-tm95, .a-text-color.-tm95, .a-rotate-bg.-tm95, .a-fade.-tm95, .a-fadeUp.-tm95, .a-fadeDown.-tm95, .a-fadeLeft.-tm95, .a-fadeRight.-tm95, .a-flipDown.-tm95, .a-flipLeft.-tm95, .a-flipRight.-tm95, .a-moveUp.-tm95, .a-moveDown.-tm95, .a-scOutImg.-tm95, .a-bird_r.-tm95, .a-bird_l01.-tm95, .a-bird_l02.-tm95, .a-purupuru.-tm95 {
+  animation-delay: 9.5s;
+}
+.a-bg-color.-tm95::after, .a-bg-color.-tm95 img, .a-text-color.-tm95::after, .a-text-color.-tm95 img, .a-rotate-bg.-tm95::after, .a-rotate-bg.-tm95 img, .a-fade.-tm95::after, .a-fade.-tm95 img, .a-fadeUp.-tm95::after, .a-fadeUp.-tm95 img, .a-fadeDown.-tm95::after, .a-fadeDown.-tm95 img, .a-fadeLeft.-tm95::after, .a-fadeLeft.-tm95 img, .a-fadeRight.-tm95::after, .a-fadeRight.-tm95 img, .a-flipDown.-tm95::after, .a-flipDown.-tm95 img, .a-flipLeft.-tm95::after, .a-flipLeft.-tm95 img, .a-flipRight.-tm95::after, .a-flipRight.-tm95 img, .a-moveUp.-tm95::after, .a-moveUp.-tm95 img, .a-moveDown.-tm95::after, .a-moveDown.-tm95 img, .a-scOutImg.-tm95::after, .a-scOutImg.-tm95 img, .a-bird_r.-tm95::after, .a-bird_r.-tm95 img, .a-bird_l01.-tm95::after, .a-bird_l01.-tm95 img, .a-bird_l02.-tm95::after, .a-bird_l02.-tm95 img, .a-purupuru.-tm95::after, .a-purupuru.-tm95 img {
+  animation-delay: 9.5s;
+}
+.a-bg-color.-tm10, .a-text-color.-tm10, .a-rotate-bg.-tm10, .a-fade.-tm10, .a-fadeUp.-tm10, .a-fadeDown.-tm10, .a-fadeLeft.-tm10, .a-fadeRight.-tm10, .a-flipDown.-tm10, .a-flipLeft.-tm10, .a-flipRight.-tm10, .a-moveUp.-tm10, .a-moveDown.-tm10, .a-scOutImg.-tm10, .a-bird_r.-tm10, .a-bird_l01.-tm10, .a-bird_l02.-tm10, .a-purupuru.-tm10 {
+  animation-delay: 10s;
+}
+.a-bg-color.-tm10::after, .a-bg-color.-tm10 img, .a-text-color.-tm10::after, .a-text-color.-tm10 img, .a-rotate-bg.-tm10::after, .a-rotate-bg.-tm10 img, .a-fade.-tm10::after, .a-fade.-tm10 img, .a-fadeUp.-tm10::after, .a-fadeUp.-tm10 img, .a-fadeDown.-tm10::after, .a-fadeDown.-tm10 img, .a-fadeLeft.-tm10::after, .a-fadeLeft.-tm10 img, .a-fadeRight.-tm10::after, .a-fadeRight.-tm10 img, .a-flipDown.-tm10::after, .a-flipDown.-tm10 img, .a-flipLeft.-tm10::after, .a-flipLeft.-tm10 img, .a-flipRight.-tm10::after, .a-flipRight.-tm10 img, .a-moveUp.-tm10::after, .a-moveUp.-tm10 img, .a-moveDown.-tm10::after, .a-moveDown.-tm10 img, .a-scOutImg.-tm10::after, .a-scOutImg.-tm10 img, .a-bird_r.-tm10::after, .a-bird_r.-tm10 img, .a-bird_l01.-tm10::after, .a-bird_l01.-tm10 img, .a-bird_l02.-tm10::after, .a-bird_l02.-tm10 img, .a-purupuru.-tm10::after, .a-purupuru.-tm10 img {
+  animation-delay: 10s;
+}
 .a-bg-color.-sp05, .a-text-color.-sp05, .a-rotate-bg.-sp05, .a-fade.-sp05, .a-fadeUp.-sp05, .a-fadeDown.-sp05, .a-fadeLeft.-sp05, .a-fadeRight.-sp05, .a-flipDown.-sp05, .a-flipLeft.-sp05, .a-flipRight.-sp05, .a-moveUp.-sp05, .a-moveDown.-sp05, .a-scOutImg.-sp05, .a-bird_r.-sp05, .a-bird_l01.-sp05, .a-bird_l02.-sp05, .a-purupuru.-sp05 {
   animation-duration: 0.5s;
 }
@@ -7297,6 +7438,8 @@ a {
 .a-fade {
   animation-name: fadeAnime;
   perspective-origin: left center;
+  animation-fill-mode: forwards;
+  opacity: 0;
 }
 @keyframes fadeAnime {
   from {
