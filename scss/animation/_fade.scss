@@ -13,7 +13,6 @@
         animation-name:fadeAnime;
         perspective-origin: left center;
         animation-fill-mode: forwards;
-
         opacity: 0;
     }
     @keyframes fadeAnime{
@@ -30,6 +29,8 @@
     &-fadeUp{
         animation-name:fadeUpAnime;
         perspective-origin: left center;
+        animation-fill-mode: forwards;
+        opacity: 0;
     }
     @keyframes fadeUpAnime{
         from {
@@ -46,6 +47,9 @@
     --------------------------------------- */
     &-fadeDown{
         animation-name:fadeDownAnime;
+        perspective-origin: left center;
+        animation-fill-mode: forwards;
+        opacity: 0;
     }
     @keyframes fadeDownAnime{
         from {
@@ -62,6 +66,9 @@
     --------------------------------------- */
     &-fadeRight{
         animation-name:fadeRightAnime;
+        perspective-origin: left center;
+        animation-fill-mode: forwards;
+        opacity: 0;
     }
     @keyframes fadeRightAnime{
         from {
@@ -78,6 +85,9 @@
     --------------------------------------- */
     &-fadeLeft{
         animation-name:fadeLeftAnime;
+        perspective-origin: left center;
+        animation-fill-mode: forwards;
+        opacity: 0;
     }
     @keyframes fadeLeftAnime{
         from {

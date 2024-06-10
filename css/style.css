@@ -7452,6 +7452,8 @@ a {
 .a-fadeUp {
   animation-name: fadeUpAnime;
   perspective-origin: left center;
+  animation-fill-mode: forwards;
+  opacity: 0;
 }
 @keyframes fadeUpAnime {
   from {
@@ -7465,6 +7467,9 @@ a {
 }
 .a-fadeDown {
   animation-name: fadeDownAnime;
+  perspective-origin: left center;
+  animation-fill-mode: forwards;
+  opacity: 0;
 }
 @keyframes fadeDownAnime {
   from {
@@ -7478,6 +7483,9 @@ a {
 }
 .a-fadeRight {
   animation-name: fadeRightAnime;
+  perspective-origin: left center;
+  animation-fill-mode: forwards;
+  opacity: 0;
 }
 @keyframes fadeRightAnime {
   from {
@@ -7491,6 +7499,9 @@ a {
 }
 .a-fadeLeft {
   animation-name: fadeLeftAnime;
+  perspective-origin: left center;
+  animation-fill-mode: forwards;
+  opacity: 0;
 }
 @keyframes fadeLeftAnime {
   from {
